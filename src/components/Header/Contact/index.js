@@ -9,12 +9,12 @@ import Item from "./Item";
 const infos = [
   {
     title: "tel.",
-    content: "+48 662 383 023",
+    content: "+48 662 383",
     icon: "/img/content/phone-cell.jpg",
   },
   {
     title: "email",
-    content: "kacper-ragankiewicz@wp.pl",
+    content: "kacper@wp.pl",
     icon: "../../../assets/img/content/email.png",
   },
 ];
