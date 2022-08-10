@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import cn from "classnames";
 import styles from "./Item.module.sass";
 
@@ -8,7 +8,7 @@ const Item = ({ className, item, onClose }) => {
     <>
         <div className={styles.item}>
             <div className={cn(styles.icon)}>
-                <img src={item.icon} alt="ICON" />
+                <img src={item.icon} alt="ICON"/>
             </div>
             <div className={styles.details}>
                 <div className={styles.line}>

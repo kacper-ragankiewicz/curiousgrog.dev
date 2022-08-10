@@ -1,21 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import cn from "classnames";
 import OutsideClickHandler from "react-outside-click-handler";
 import styles from "./Contact.module.sass";
 
 import Item from "./Item";
 
+import phone from "../../../assets/img/content/phone-call.png"
+import email from "../../../assets/img/content/email.png"
+
 const infos = [
   {
     title: "tel.",
     content: "+48 662 383",
-    icon: "/img/content/phone-cell.jpg",
+    icon: `${ phone }`,
   },
   {
     title: "email",
     content: "kacper@wp.pl",
-    icon: "../../../assets/img/content/email.png",
+    icon: `${ email }`,
   },
 ];
 
