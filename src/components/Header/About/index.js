@@ -1,17 +1,17 @@
 import React from "react";
-import styles from "./Contact.module.sass";
+import styles from "./About.module.sass";
 
 
-const Contact = ({ className }) => {
+const About = ({ className }) => {
 
     return (
         <>
             <div className={styles.body}>
                 <button className={styles.head}>
-                    <span className={styles.span}>Contact</span>
+                    <span className={styles.span}>About</span>
                 </button>
             </div>
         </>
     )
 }
-export default Contact;
+export default About;

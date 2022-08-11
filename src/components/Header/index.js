@@ -4,18 +4,19 @@ import { withRouter } from "react-router-dom";
 import styles from "./Header.module.sass";
 
 import Contact from "./Contact";
-import Who from "./Who"
+import Github from "./Github";
+import About from "./About";
+import Dropdown from "../Dropdown";
 
 const Header = ({onOpen}) => {
     const [visible, setVisible] = useState(false);
-
-    console.log(visible)
 
     return (
         <header className={styles.header}>
             <div className={styles.control} onClick={() => setVisible(false)}>
                 <Contact className={styles.contact} />
-                <Who className={styles.who} />
+                <Github className={styles.github} />
+                <About className={styles.about} />
             </div>
         </header>
     );
