@@ -1,1 +1,23 @@
 @import ../../assets/main
+
+.page
+    padding: 96px 20px 0 20px
+    +x
+        padding: 80px 300px 0 300px
+    +d
+        padding-left: 96px
+    +t
+        overflow: hidden
+    +m
+        padding-left: 0
+
+.inner
+    display: flex
+    flex-direction: column
+    min-height: calc(100vh - 96px)
+    padding: 40px
+    +x
+        padding: 32px 24px
+    +m
+        padding: 24px 16px
+
