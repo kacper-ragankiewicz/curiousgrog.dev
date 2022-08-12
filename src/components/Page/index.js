@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
 // import cn from "classnames";
 import styles from "./Page.module.sass";
@@ -10,7 +10,7 @@ const Page = ({wide, children, title, className }) => {
 
     return (
         <>
-        <div className={styles.page}>
+        <div className={styles.body}>
             <Header/>
         </div>
         </>
