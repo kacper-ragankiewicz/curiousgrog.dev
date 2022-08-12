@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./Logo.module.sass";
 
 const Logo = ({ className }) => {
-    <header className={styles.header}>
-        <span className={styles.main}>curiousgrog
-            <span className={styles.index}>.dev</span>
-        </span>
-    </header>
+
+    return (
+        <div className={styles.logo}>
+           <span>curiousgrog<span className={styles.dev}>.dev</span></span>
+        </div>
+    );
 };
 export default Logo;

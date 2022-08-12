@@ -10,7 +10,7 @@ const Header = ({onOpen}) => {
 
     return (
         <nav className={styles.navbar}>
-            <Logo className={styles.logo}/>
+            <Logo/>
             <div className={styles.controler}>
                 <ul className={styles.navitem}>
                     <Item icon="About"/>
