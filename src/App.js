@@ -17,7 +17,7 @@ function App() {
           exact
           path={Routes.MAIN}
           render={() => (
-            <Page title="Strona główna">
+            <Page>
               <Home />
             </Page>
           )}

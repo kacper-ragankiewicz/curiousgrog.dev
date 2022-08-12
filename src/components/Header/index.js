@@ -10,13 +10,15 @@ const Header = ({onOpen}) => {
 
     return (
         <nav className={styles.navbar}>
-            <Logo/>
-            <div className={styles.controler}>
-                <ul className={styles.navitem}>
-                    <Item icon="About"/>
-                    <Item icon="Github"/>
-                    <Item icon="Contact"/>
-                </ul>
+            <div className={styles.body}>
+                <Logo/>
+                <div className={styles.controler}>
+                    <ul className={styles.navitem}>
+                        <Item icon="About"/>
+                        <Item icon="Github"/>
+                        <Item icon="Contact"/>
+                    </ul>
+                </div>
             </div>
         </nav>
     );
