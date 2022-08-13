@@ -12,7 +12,18 @@ const Home = ({ className }) => {
                 classTitle="title-blue"
                 className={cn(styles.card, className)}
             >
-                <span>Hello</span>
+                <div className={styles.body}>
+                    <span className={styles.span}>Fullstack developer</span>
+                    <p className={styles.paragraf}>
+                        This is my website, here you can learn some useful informations about me.
+                        I am always trying to learn new things and I am always trying to improve my skills.
+                    </p>
+                    <button className={styles.button}>
+                        <a href="/" className={styles.link}>
+                            Contact me
+                        </a>
+                    </button>
+                </div>
             </Card>
         </div>
     );
