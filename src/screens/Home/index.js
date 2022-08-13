@@ -6,7 +6,7 @@ import Card from "../../components/Card";
 import photo from "../../assets/img/photo2.jpg";
 
 const content = {
-    paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and I am always trying to improve my skills.",
+    paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and always trying to improve my skills.",
     button: "Contact me"
 };
 
