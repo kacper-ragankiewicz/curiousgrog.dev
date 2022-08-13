@@ -17,10 +17,9 @@ const Header = ({ className }) => {
                     <Logo/>
                     <div className={styles.controler}>
                         <ul className={styles.navitem}>
-                            <Item icon="About"/>
-                            <Item icon="Github"/>
-                            <Item icon="Contact"/>
+                            <Item/>
                         </ul>
+                        {/* Toogling menu */}
                          <div
                             className={cn(styles.messages, className, {
                             [styles.active]: visible,
@@ -38,9 +37,7 @@ const Header = ({ className }) => {
                             </div>
                             <div className={styles.box}>
                                     <ul className={styles.navitem}>
-                                        <Item icon="About"/>
-                                        <Item icon="Github"/>
-                                        <Item icon="Contact"/>
+                                        <Item/>
                                     </ul>
                                 </div>
                             </div>

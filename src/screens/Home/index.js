@@ -32,9 +32,11 @@ const Home = ({ className }) => {
                             {content.button}
                         </a>
                     </button>
-                    {/* <div className={styles.photo1}>
-                        <img src={photo}/>
-                    </div> */}
+                    <div className={styles.animation}>
+                        <div className={styles.wrapper}>
+                            
+                        </div>
+                    </div>
                 </div>
             </Card>
         </div>
