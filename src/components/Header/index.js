@@ -1,6 +1,5 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import OutsideClickHandler from "react-outside-click-handler";
 import cn from "classnames";
 import styles from "./Header.module.sass";
 
@@ -37,11 +36,13 @@ const Header = ({ className }) => {
                             <div className={styles.header}>
                                 <span className={styles.span}>menu</span>
                             </div>
-                                <ul className={styles.navitem}>
-                                    <Item icon="About"/>
-                                    <Item icon="Github"/>
-                                    <Item icon="Contact"/>
-                                </ul>
+                            <div className={styles.box}>
+                                    <ul className={styles.navitem}>
+                                        <Item icon="About"/>
+                                        <Item icon="Github"/>
+                                        <Item icon="Contact"/>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
