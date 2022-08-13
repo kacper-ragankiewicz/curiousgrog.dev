@@ -6,7 +6,6 @@ import Card from "../../components/Card";
 import photo from "../../assets/img/photo2.jpg";
 
 const content = {
-    name: "Fullstack developer",
     paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and I am always trying to improve my skills.",
     button: "Contact me"
 };
@@ -21,7 +20,7 @@ const Home = ({ className }) => {
                 className={cn(styles.card, className)}
             >
                 <div className={styles.body}>
-                    <span className={styles.span}>{content.name}</span>
+                    <span className={styles.span}>Fullstack<span className={styles.linearwipe}> developer</span></span>
                     <p className={styles.paragraf}>
                         {content.paragraf}
                     </p>
