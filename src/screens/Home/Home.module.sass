@@ -2,6 +2,9 @@
 
 .body
     padding-top: 200px
+    padding-bottom: 800px
+    +m
+        padding-top: 30px
 
 .card
     z-index: 10
@@ -14,6 +17,9 @@
     max-width: 533px
     width: 50%
     font-weight: 450
+    +m
+        width: 90%
+        text-align: justify
 .button
     border: 0px
     padding: 10px 30px
@@ -25,15 +31,22 @@
         font-size: 18px
         font-weight: 550
 .photo1
-    width: 500px
-    height: 300px
+    width: 80%
+    height: auto
+    max-width: 500px
     z-index: -10
     object-fit: cover
     position: absolute
-    displat: flex
     margin-top: -250px
-    margin-left: 70px
+    margin-left: 190px
+    opacity: 0.7
+    +m
+        margin-left: 0
+        opacity: 0.5
     img
-        width: 500px
+        width: 100%
         height: auto
+        border: 2px solid $n5
+        +m
+            border: 2px solid $m1
 
