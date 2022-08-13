@@ -34,6 +34,9 @@ const Header = ({ className }) => {
                                     <img src={list} alter="List"/>
                             </button>
                             <div className={styles.menu}>
+                            <div className={styles.header}>
+                                <span className={styles.span}>menu</span>
+                            </div>
                                 <ul className={styles.navitem}>
                                     <Item icon="About"/>
                                     <Item icon="Github"/>
