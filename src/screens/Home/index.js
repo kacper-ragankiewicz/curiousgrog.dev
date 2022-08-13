@@ -3,6 +3,7 @@ import cn from "classnames";
 import styles from "./Home.module.sass";
 
 import Card from "../../components/Card";
+import photo from "../../assets/img/photo1.jpg";
 
 const Home = ({ className }) => {
 
@@ -23,6 +24,9 @@ const Home = ({ className }) => {
                             Contact me
                         </a>
                     </button>
+                    <div className={styles.photo1}>
+                        <img src={photo}/>
+                    </div>
                 </div>
             </Card>
         </div>
