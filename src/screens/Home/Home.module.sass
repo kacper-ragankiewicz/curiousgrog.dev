@@ -22,14 +22,24 @@
         text-align: justify
 .button
     border: 0px
+    cursor: pointer
     padding: 10px 30px
-    background-color: $p4
+    background-color: transparent
     border-radius: 20px
     margin-top: 30px
+    box-shadow: 5px 5px 12px 4px $n8;
+    transition: 0.2s
+    background-image: linear-gradient(to right, #353b34 0%, #41d33c 100%)
     a
         color: $n1
         font-size: 18px
         font-weight: 550
+        transition: 0.4s
+    &:hover
+        background-color: $p5
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+        a
+            color: $m1
 .photo1
     width: 80%
     height: auto
