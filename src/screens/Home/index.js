@@ -3,7 +3,7 @@ import cn from "classnames";
 import styles from "./Home.module.sass";
 
 import Card from "../../components/Card";
-import photo from "../../assets/img/photo1.jpg";
+import photo from "../../assets/img/photo1_500x300.jpg";
 
 const Home = ({ className }) => {
 
