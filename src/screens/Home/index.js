@@ -16,7 +16,7 @@ const Home = ({ className }) => {
     if(boxup == false || boxup == true) {
         setTimeout(() => {
             setBoxup(!boxup)
-        }, 5000);
+        }, 3000);
     }
 
     return (
