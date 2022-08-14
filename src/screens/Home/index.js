@@ -11,8 +11,14 @@ const content = {
 };
 
 const Home = ({ className }) => {
-    const [visible, setVisible] = React.useState(false);
-    console.log(visible)
+    const [boxup, setBoxup] = React.useState(false);
+
+    if(boxup == false || boxup == true) {
+        setTimeout(() => {
+            setBoxup(!boxup)
+        }, 5000);
+    }
+
     return (
         <div className={styles.header}>
             <Card
@@ -26,7 +32,6 @@ const Home = ({ className }) => {
                     </p>
                     <button
                         className={cn(styles.button, styles.active)}
-                        onClick={()=> setVisible(!visible)}
                         >
                         <a href="#" className={styles.link}>
                             {content.button}
@@ -34,7 +39,13 @@ const Home = ({ className }) => {
                     </button>
                     <div className={styles.animation}>
                         <div className={styles.wrapper}>
-                            
+                            <div className={cn(styles.boxone, className, {
+                                [styles.boxup]: boxup
+                            })}/>
+                            <div className={cn(styles.boxtwo, className, {
+                                [styles.boxup]: boxup
+                            })}/>
+                            <div className={styles.boxthree}/>
                         </div>
                     </div>
                 </div>
