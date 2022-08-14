@@ -1,0 +1,53 @@
+@import ../../assets/main
+
+.span
+    font-size: 40px
+    font-weight: 500
+    +m
+        font-size: 30px
+.paragraf
+    max-width: 533px
+    width: 50%
+    font-weight: 500
+    z-index: 10
+    +m
+        width: 90%
+        text-align: justify
+.button
+    border: 0px
+    cursor: pointer
+    padding: 10px 30px
+    background-color: transparent
+    border-radius: 20px
+    margin-top: 30px
+    box-shadow: 5px 5px 12px 4px $n8;
+    transition: 0.2s
+    background-image: linear-gradient(to right, #353b34 0%, #41d33c 100%)
+    +m
+        margin-top: 10px
+    a
+        color: $n1
+        font-size: 18px
+        font-weight: 550
+        transition: 0.4s
+    &:hover
+        background-color: $p5
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+        a
+            color: $m1
+.linearwipe
+  text-align: center;
+
+  background: linear-gradient(to right, #79db61 0%, #29a809 50%, #2bb408 100%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 3s linear infinite;
+  @keyframes shine 
+    to 
+      background-position: 200% center;
