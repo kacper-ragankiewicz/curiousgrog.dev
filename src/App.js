@@ -7,6 +7,7 @@ import Page from "./components/Page";
 
 // screens
 import Home from "./screens/Home";
+import Jumy from "./screens/Jumy";
 
 
 function App() {
@@ -19,6 +20,15 @@ function App() {
           render={() => (
             <Page>
               <Home />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path={Routes.JUMYJUMY}
+          render={() => (
+            <Page>
+              <Jumy />
             </Page>
           )}
         />
