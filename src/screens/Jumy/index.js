@@ -82,15 +82,15 @@ const Jumy = ({ className }) => {
     const [sn, setSn] = React.useState(0);
     const [ob, setOb] = React.useState(0);
     const [ko, setKo] = React.useState(0);
+    
 
-    function Random(min, max) {
+    function Random(min, max, rand) {
         min = Math.ceil(min);
         max = Math.floor(max);
-        return setSn(Math.floor(Math.random() * (max - min + 1)) + min),
-                setOb(Math.floor(Math.random() * (max - min + 1)) + min),
-                setKo(Math.floor(Math.random() * (max - min + 1)) + min)
+        return rand(Math.floor(Math.random() * (max - min + 1)) + min)
 
     }
+
 
     return (
         <div className={styles.header}>
@@ -104,46 +104,15 @@ const Jumy = ({ className }) => {
                         <div className={styles.boxer}>{obiad[ob].name}</div>
                         <div className={styles.boxer}>{kolacja[ko].name}</div>
                     </div>
-                    <div className={styles.box}>
-                        <span>Wto</span>
-                        <div className={styles.boxer}>{sniadanie[sn].name}</div>
-                        <div className={styles.boxer}>{obiad[ob].name}</div>
-                        <div className={styles.boxer}>{kolacja[ko].name}</div>
-                    </div>
-                    <div className={styles.box}>
-                        <span>Sro</span>
-                        <div className={styles.boxer}>{sniadanie[sn].name}</div>
-                        <div className={styles.boxer}>{obiad[ob].name}</div>
-                        <div className={styles.boxer}>{kolacja[ko].name}</div>
-                    </div>
-                    <div className={styles.box}>
-                        <span>Czwa</span>
-                        <div className={styles.boxer}>{sniadanie[sn].name}</div>
-                        <div className={styles.boxer}>{obiad[ob].name}</div>
-                        <div className={styles.boxer}>{kolacja[ko].name}</div>
-                    </div>
-                    <div className={styles.box}>
-                        <span>Pia</span>
-                        <div className={styles.boxer}>{sniadanie[sn].name}</div>
-                        <div className={styles.boxer}>{obiad[ob].name}</div>
-                        <div className={styles.boxer}>{kolacja[ko].name}</div>
-                    </div>
-                    <div className={styles.box}>
-                        <span>Sob</span>
-                        <div className={styles.boxer}>{sniadanie[sn].name}</div>
-                        <div className={styles.boxer}>{obiad[ob].name}</div>
-                        <div className={styles.boxer}>{kolacja[ko].name}</div>
-                    </div>
-                    <div className={styles.box}>
-                        <span>Nie</span>
-\                       <div className={styles.boxer}>{sniadanie[sn].name}</div>
-                        <div className={styles.boxer}>{obiad[ob].name}</div>
-                        <div className={styles.boxer}>{kolacja[ko].name}</div>
-                    </div>
                 </div>
                 <button
                     className={styles.button}
-                    onClick={()=> Random(0,3)}
+                    onClick={()=> {
+                        Random(0,3,setSn)
+                        Random(0,3,setOb)
+                        Random(0,3,setKo)
+                        }
+                    }
                 >
                     Spin
                 </button>
