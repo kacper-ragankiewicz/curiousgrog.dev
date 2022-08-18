@@ -35,7 +35,6 @@ const Home = ({ className }) => {
             setLightone(!lightone)
         }, 1000);
     }
-
     return (
         <div className={styles.header}>
             <Card

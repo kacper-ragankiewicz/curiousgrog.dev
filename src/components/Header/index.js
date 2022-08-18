@@ -21,7 +21,7 @@ const Header = ({ className }) => {
                         </ul>
                         {/* Toogling menu */}
                          <div
-                            className={cn(styles.messages, className, {
+                            className={cn(styles.object, className, {
                             [styles.active]: visible,
                             })}
                             >
