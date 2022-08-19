@@ -34,3 +34,4 @@ To run frontend
 ```
     $ sudo yarn start
 ```
+Jumy can be found on /jumyjumy address.
