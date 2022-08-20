@@ -6,7 +6,7 @@ const Item = ({ className }) => {
     return (
         <>
             <li className={styles.navitem}>
-                <a href="/" className={styles.icon}>
+                <a href="/about" className={styles.icon}>
                     About
                 </a>
             </li>

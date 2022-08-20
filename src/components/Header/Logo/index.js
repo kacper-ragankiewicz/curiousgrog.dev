@@ -5,7 +5,7 @@ const Logo = ({ className }) => {
 
     return (
         <div className={styles.logo}>
-           <span>curiousgrog<span className={styles.dev}>.dev</span></span>
+            <a href="/"><span>curiousgrog<span className={styles.dev}>.dev</span></span></a>
         </div>
     );
 };
