@@ -14,15 +14,17 @@ const Slidebox = ({ className }) => {
     return (
         <div className={styles.animation}>
             <div className={styles.wrapper}>
-                <div className={cn(styles.boxone, className, {
-                    [styles.boxup]: boxup
-                })}/>
-                <div className={cn(styles.boxtwo, className, {
-                    [styles.boxup]: boxup
-                })}/>
-                <div className={cn(styles.boxthree, className, {
-                    [styles.boxup]: boxup
-                })}/>
+                <div className={styles.container}>
+                     <div className={cn(styles.boxone, className, {
+                        [styles.boxup]: boxup
+                    })}/>
+                    <div className={cn(styles.boxtwo, className, {
+                        [styles.boxup]: boxup
+                    })}/>
+                    <div className={cn(styles.boxthree, className, {
+                        [styles.boxup]: boxup
+                    })}/>
+                </div>
             </div>
         </div>
     );

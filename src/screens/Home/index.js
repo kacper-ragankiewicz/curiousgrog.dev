@@ -49,7 +49,8 @@ const Home = ({ className }) => {
                         button="Contact me"
                     />
                     <Slidebox/>
-                    <div className={styles.bar}>
+                </div>
+                <div className={styles.bar}>
                         <div className={styles.boxone}>
                             <div className={cn(styles.number, className, {
                             [styles.active]: lightone
@@ -69,7 +70,6 @@ const Home = ({ className }) => {
                             <span>Security</span>
                         </div>
                     </div>
-                </div>
             </Card>
         </div>
     );
