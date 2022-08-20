@@ -9,22 +9,26 @@ const Span = ({
     button,
     wipe,
     link,
-    onClick
 }) => {
+
+    const [move, setMove] = React.useState(false);
+
     return (
         <>
-        <span className={styles.span}>{title}<span className={styles.linearwipe}>{wipe}</span></span>
-                    <p className={styles.paragraf}>
-                        {paragraf}
-                    </p>
-                    <button
-                        className={cn(styles.button, styles.active)}
-                        onClick={onClick}
-                        >
-                        <a href={link} className={styles.link}>
-                            {button}
-                        </a>
-                    </button>
+            <div className={styles.body}>
+                <span className={styles.span}>{title}<span className={styles.linearwipe}>{wipe}</span></span>
+                <p className={styles.paragraf}>
+                    {paragraf}
+                </p>
+                <button
+                    className={cn(styles.button, { [styles.move]:move })}
+                    onClick={() => setMove(!move)}
+                    >
+                    <a href={link} className={styles.link}>
+                        {button}
+                    </a>
+                </button>
+            </div>
         </>
     );
 }

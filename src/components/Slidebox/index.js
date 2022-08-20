@@ -15,7 +15,8 @@ const Slidebox = ({ className }) => {
         <div className={styles.animation}>
             <div className={styles.wrapper}>
                 <div className={styles.container}>
-                     <div className={cn(styles.boxone, className, {
+                    <div className={cn(styles.line, className, { [styles.color]: boxup })}>
+                         <div className={cn(styles.boxone, className, {
                         [styles.boxup]: boxup
                     })}/>
                     <div className={cn(styles.boxtwo, className, {
@@ -24,6 +25,7 @@ const Slidebox = ({ className }) => {
                     <div className={cn(styles.boxthree, className, {
                         [styles.boxup]: boxup
                     })}/>
+                    </div>
                 </div>
             </div>
         </div>

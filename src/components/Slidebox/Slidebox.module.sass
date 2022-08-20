@@ -9,11 +9,13 @@
     z-index: -30
     margin-top: -300px
     margin-left: 200px
+    overflow: hidden
     +m
         height: 250px
         margin-top: -240px
-         min-width: 500px
+        min-width: 500px
         width: 47vw
+        overflow: visible
 
 .container
     margin-left: 18vw
@@ -22,18 +24,37 @@
     +m
         margin-left: 0vw
 
+.line
+    position: relative
+    margin-top: 20px
+    display: flex
+    width: 90%
+    height: 360px
+    border: 2px solid
+    border-color: $n7 $n7 $n7 transparent
+    border-radius: 0 15px 15px 0
+    transition: 3s
+    +t
+        width: 100%
+        border-radius: 0
+    +m
+        height: 220px
+        border-color: transparent
+    &.color
+        border-color: $n5 $n5 $n5 transparent
+
 %box
     background: $p5
     display: flex
     position: absolute
     width: 90px
     height: 100px
-    margin-top: 270px
+    margin-top: 250px
     border: 2px solid $m1
-    border-radius: 5px
+    border-radius: 10px
     transition: ease-in-out 3s
     +m
-        margin-top: 130px
+        margin-top: 110px
         margin-left: 40px
         width: 60px
 
@@ -43,7 +64,7 @@
     &.boxup
         height: 200px
         margin-top: 100px
-        opacity: 0.3
+        opacity: 0.2
 
 .boxtwo
     @extend %box
@@ -52,23 +73,22 @@
         height: 120px
         margin-top: 30px
         opacity: 0.8
-        border-radius: 15px
+        border-radius: 25px
+        background: $n5
     +m
-        margin-left: 19vw
+        margin-left: 17vw
     +s
         margin-left: 100px
 .boxthree
     @extend %box
     margin-left: 240px
-    height: 180px
-    margin-top: 10px
-    opacity: 0.4
     &.boxup
         height: 30px
         margin-top: 100px
+        background: $n7
         opacity: 0.8
         border-radius: 15px
     +m
-        margin-left: 34vw
+        margin-left: 32vw
     +s
         display: none
