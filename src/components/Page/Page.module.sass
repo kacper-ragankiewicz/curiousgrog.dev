@@ -17,6 +17,41 @@
         width: 100vw
         margin-left: auto
         margin-right: auto
+.loader
+    visibility: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &.loading
+        position: absolute
+        visibility: visible
+        display: flex
+        background: $n8
+        z-index: 30
+        opacity: 0.8
+        width: 100vw
+        height: 100vh
+
+.object
+    position: absolute
+    width: 80px
+    height: 80px
+    stroke-dasharray: 50;
+    stroke-dashoffset: 0;
+    animation: load 0.8s linear infinite;
+    transform-origin: center;
+
+@keyframes load
+  0%
+    stroke-dashoffset: 50;
+
+  50%
+    stroke-dashoffset: 0;
+
+  100%
+    stroke-dashoffset: -50
+
 
 .inner
     display: flex

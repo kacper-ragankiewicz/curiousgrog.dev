@@ -33,23 +33,25 @@ const Bar = ({
 
     return (
         <div className={styles.bar}>
-            <div className={styles.boxone}>
-                <div className={cn(styles.number, className, {
-                [styles.active]: lightone
-            })}>1</div>
-                <span>{one}</span>
-            </div>
-            <div className={styles.boxone}>
-                <div className={cn(styles.number, className, {
-                [styles.active]: lighttwo
-            })}>2</div>
-                <span>{two}</span>
-            </div>
-            <div className={styles.boxone}>
-                <div className={cn(styles.number, className, {
-                [styles.active]: lightthree
-            })}>3</div>
-                <span>{three}</span>
+            <div className={styles.curve}>
+                <div className={styles.boxone}>
+                    <div className={cn(styles.number, className, {
+                    [styles.active]: lightone
+                })}>1</div>
+                    <span>{one}</span>
+                </div>
+                <div className={styles.boxone}>
+                    <div className={cn(styles.number, className, {
+                    [styles.active]: lighttwo
+                })}>2</div>
+                    <span>{two}</span>
+                </div>
+                <div className={styles.boxone}>
+                    <div className={cn(styles.number, className, {
+                    [styles.active]: lightthree
+                })}>3</div>
+                    <span>{three}</span>
+                </div>
             </div>
         </div>
     );

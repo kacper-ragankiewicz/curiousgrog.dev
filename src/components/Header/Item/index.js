@@ -11,7 +11,7 @@ const Item = ({ className }) => {
                 </a>
             </li>
             <li className={styles.navitem}>
-                <a href="/" className={styles.icon}>
+                <a href="https://github.com/kacper-ragankiewicz" className={styles.icon}>
                     Github
                 </a>
             </li>

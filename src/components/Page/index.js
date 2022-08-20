@@ -7,9 +7,30 @@ import styles from "./Page.module.sass";
 import Header from "../Header";
 
 const Page = ({wide, children, title, className }) => {
+    const [visible, setVisible] = React.useState(true)
+
+    if (visible == true)
+        setTimeout(() => {
+            setVisible(false)
+        }, 1000);
 
     return (
         <>
+            <div className={cn(styles.loader, className, { [styles.loading]: visible })}>
+                <div className={styles.object}>
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="<http://www.w3.org/2000/svg>"
+                    >
+                        <circle
+                            cx="12" cy="12" r="8"
+                            stroke-width="4" stroke="green"
+                            fill="none"
+                        />
+
+                    </svg>
+                </div>
+            </div>
             <div className={styles.page}>
                 <Header/>
                 <div
