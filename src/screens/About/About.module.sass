@@ -75,8 +75,14 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
     &:hover
         cursor: pointer
+        animation: move .4s ease-in-out infinite
     +m
         min-width: 21vw
+
+@keyframes move
+    0% { transform: translate(0,0)}
+    50% { transform: translate(0,4px)}
+    100%  { transform: translate(0,0)}
 
 .wrap
     display: flex
