@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames"
 import styles from "./Jumy.module.sass";
 
-import Card from "../../components/Card";
 
 const ko = [
     {
@@ -120,8 +119,8 @@ const Jumy = ({ className }) => {
 
     return (
         <div className={styles.header}>
-            <Card
-                className={styles.card}
+            <div
+                className={styles.wrapper}
             >
                 <div className={styles.body}>
                     <div className={styles.box}>
@@ -198,11 +197,11 @@ const Jumy = ({ className }) => {
                     Spin
                 </button>
                 <div className={styles.content}>
-                    <Card>
+                    <div>
                         <span>Lista zakupów</span>
-                    </Card>
+                    </div>
                 </div>
-            </Card>
+            </div>
         </div>
     )
 };

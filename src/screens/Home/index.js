@@ -2,7 +2,7 @@ import React from "react";
 import cn from "classnames";
 import styles from "./Home.module.sass";
 
-import Card from "../../components/Card";
+// components
 import Slidebox from "../../components/Slidebox";
 import Span from "../../components/Span";
 import Bar from "../../components/Bar";
@@ -16,9 +16,7 @@ const Home = ({ className }) => {
 
     return (
         <div className={styles.header}>
-            <Card
-                classTitle="title-blue"
-                className={cn(styles.card, className)}
+            <div className={styles.hidder}
             >
                 <div className={styles.body}>
                     <Span
@@ -34,7 +32,7 @@ const Home = ({ className }) => {
                     two={content.bar[1]}
                     three={content.bar[2]}
                 />
-            </Card>
+            </div>
         </div>
     );
 }
