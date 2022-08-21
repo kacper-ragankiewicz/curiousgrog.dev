@@ -4,6 +4,14 @@ import cn from "classnames";
 
 // components
 import Box from "../../components/Box";
+const date_1 = new Date('8/25/2021');
+const date_2 = new Date();
+
+const days = (date_1, date_2) => {
+    let difference = date_1.getTime() - date_2.getTime();
+    let TotalDays = Math.ceil(((difference * -1 ) / (1000 * 3600 * 24))/30);
+    return TotalDays;
+}
 
 const About = ({ className }) => {
     return (
@@ -15,7 +23,7 @@ const About = ({ className }) => {
                 <div className={styles.name}>
                     <span>Kacper</span>
                     <div className={styles.deve}>Fullstack Developer</div>
-                    <div className={styles.since}>Since 1,5 year</div>
+                    <div className={styles.since}><span>since:</span>{days(date_1,date_2)} Months</div>
                 </div>
             </div>
             <div className={styles.line}>
