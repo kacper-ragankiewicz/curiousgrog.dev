@@ -5,7 +5,7 @@ import styles from "./Slidebox.module.sass";
 const Slidebox = ({ className }) => {
     const [boxup, setBoxup] = React.useState(false);
 
-    if(boxup == false || boxup == true) {
+    if(boxup === false || boxup === true) {
         setTimeout(() => {
             setBoxup(!boxup)
         }, 3000);

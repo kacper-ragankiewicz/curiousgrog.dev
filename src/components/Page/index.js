@@ -9,7 +9,7 @@ import Header from "../Header";
 const Page = ({wide, children, title, className }) => {
     const [visible, setVisible] = React.useState(true)
 
-    if (visible == true)
+    if (visible === true)
         setTimeout(() => {
             setVisible(false)
         }, 1000);

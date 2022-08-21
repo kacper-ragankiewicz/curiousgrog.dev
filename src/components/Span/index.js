@@ -13,6 +13,10 @@ const Span = ({
 
     const [move, setMove] = React.useState(false);
 
+    setTimeout(() => {
+        setMove(!move)
+    }, 2000);
+
     return (
         <>
             <div className={styles.body}>

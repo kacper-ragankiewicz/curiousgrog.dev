@@ -26,10 +26,10 @@ const Header = ({ className }) => {
                             })}
                             >
                             <button
-                                className={cn(styles.list, styles.active)}
+                                className={cn(styles.list)}
                                 onClick={() => setVisible(!visible)}
                                 >
-                                    <img src={list} alter="List"/>
+                                    <img src={list} alt="Lista"/>
                             </button>
                             <div className={styles.menu}>
                             <div className={styles.header}>
@@ -37,7 +37,7 @@ const Header = ({ className }) => {
                             </div>
                             <div className={styles.box}>
                                     <ul className={styles.navitem}>
-                                        <Item/>
+                                        <Item />
                                     </ul>
                                 </div>
                             </div>

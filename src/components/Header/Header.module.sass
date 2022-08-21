@@ -40,22 +40,21 @@
         visibility: visible
         border: none
         margin-left: 6rem
+        border-radius: 50%
+        transition: .2s linear
         img
             height: 28px
             width: 28px
+            padding: 6px
 .menu
     position: absolute
-    right: 16px
-    left: 0
-    width: 100vw
+    width: 50vw
+    margin-left: 100vw
     border-radius: 16px
     box-shadow: 0px 40px 64px -12px rgba(0, 0, 0, 0.08), 0px 0px 14px -4px rgba(0, 0, 0, 0.05), 0px 32px 48px -8px rgba(0, 0, 0, 0.1)
-    background: $n
     border: 1px solid transparent
     visibility: hidden
     opacity: 0
-    transform: translateY(3px)
-    background: $m1
     transition: all .4s
 
 .object
@@ -63,18 +62,22 @@
         .menu
             +m
                 visibility: visible
+                background: $n7
                 opacity: 1
+                transform: translateX(-100vw)
         .navitem
             display: inline-block
-            padding: 20px
+            padding: 40px
         .box
             display: flex
             align-content: center
             justify-content: flex-start
+        .list
+            background: $n7
 .span
     display: flex
     position: relative
     align-content: center
     justify-content: center
     background: $n5
-    transition: all 0.6s
+

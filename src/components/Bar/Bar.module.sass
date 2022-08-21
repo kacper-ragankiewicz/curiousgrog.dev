@@ -10,6 +10,7 @@
     align-content: center
     justify-content: space-between
     margin-top: 200px
+    background-image: url("../../assets/svg/blob1.svg")
     // overflow: hidden
     +m
         margin-top: 80px
@@ -21,7 +22,11 @@
 
 .curve
     position: absolute
-    height: 100%
+    aspect-ratio: 960/300
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    height: auto
     display: flex
     width: 100%
     // &::before
