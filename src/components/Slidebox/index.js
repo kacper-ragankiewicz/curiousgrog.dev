@@ -3,28 +3,15 @@ import cn from "classnames";
 import styles from "./Slidebox.module.sass";
 
 const Slidebox = ({ className }) => {
-    const [boxup, setBoxup] = React.useState(false);
-
-    if(boxup === false || boxup === true) {
-        setTimeout(() => {
-            setBoxup(!boxup)
-        }, 3000);
-    }
 
     return (
         <div className={styles.animation}>
             <div className={styles.wrapper}>
                 <div className={styles.container}>
-                    <div className={cn(styles.line, className, { [styles.color]: boxup })}>
-                         <div className={cn(styles.boxone, className, {
-                        [styles.boxup]: boxup
-                    })}/>
-                    <div className={cn(styles.boxtwo, className, {
-                        [styles.boxup]: boxup
-                    })}/>
-                    <div className={cn(styles.boxthree, className, {
-                        [styles.boxup]: boxup
-                    })}/>
+                    <div className={styles.line}>
+                         <div className={styles.boxone}/>
+                    <div className={styles.boxtwo}/>
+                    <div className={styles.boxthree}/>
                     </div>
                 </div>
             </div>
