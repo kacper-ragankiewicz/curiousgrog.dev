@@ -13,7 +13,25 @@ const days = (date_1, date_2) => {
     return TotalDays;
 }
 
+function Random(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+
+
 const About = ({ className }) => {
+    const [move1, setMove1] = React.useState(true);
+    const [move2, setMove2] = React.useState(false);
+    const [move3, setMove3] = React.useState(false);
+    const [move4, setMove4] = React.useState(false);
+    const [move5, setMove5] = React.useState(false);
+    const [move6, setMove6] = React.useState(false);
+
+    if (move1 === true) setMove1(false)
+
     return (
         <div className={styles.body}>
             <div className={styles.header}>
@@ -31,16 +49,16 @@ const About = ({ className }) => {
                     title="Skills"
                 >
                     <div className={styles.liner}>
-                        <div className={styles.element}>JavaScript</div>
-                        <div className={styles.element}>TypeScript</div>
+                        <div className={cn(styles.element, { [styles.move]: move1 })}>JavaScript</div>
+                        <div className={cn(styles.element, { [styles.move]: move2 })}>TypeScript</div>
                     </div>
                     <div className={styles.liner}>
-                        <div className={styles.element}>React</div>
-                        <div className={styles.element}>CSS</div>
+                        <div className={cn(styles.element, { [styles.move]: move3 })}>React</div>
+                        <div className={cn(styles.element, { [styles.move]: move4 })}>CSS</div>
                     </div>
                     <div className={styles.liner}>
-                        <div className={styles.element}>NodeJS</div>
-                        <div className={styles.element}>SQL</div>
+                        <div className={cn(styles.element, { [styles.move]: move5 })}>NodeJS</div>
+                        <div className={cn(styles.element, { [styles.move]: move6 })}>SQL</div>
                     </div>
                 </Box>
                 <Box
