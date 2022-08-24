@@ -18,7 +18,7 @@ const Page = ({ wide, children, title, className }) => {
   return (
     <>
       {/* Loadding view */}
-    <div className={cn(styles.loader, className, { [styles.loading]: visible })}>
+    {/* <div className={cn(styles.loader, className, { [styles.loading]: visible })}>
             <div className={styles.object}>
                 <svg
                     viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ const Page = ({ wide, children, title, className }) => {
 
                 </svg>
             </div>
-        </div>
+        </div> */}
       <div className={styles.page}>
         <Header className={styles.header} />
         <div
