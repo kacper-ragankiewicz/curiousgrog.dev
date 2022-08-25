@@ -70,7 +70,7 @@ const About = ({ className }) => {
                     <span className={styles.span}>Hi, My name is Kacper</span>
 
                     <p className={styles.paragraf}>I'm Fullstack Developer and Cyber Security researcher. For dayly bases I spend most of my time on developing my projects and implementing new ideas.</p>
-                    <div>                {useScript('https://tryhackme.com/badge/94886')}</div>
+                    {/* {useScript('https://tryhackme.com/badge/94886')} */}
                 </Box>
                 <Box
                     title="Known Technologies"
@@ -95,7 +95,7 @@ const About = ({ className }) => {
                 <Box
                     title="Using technology since:"
                 >
-                    <ul className={styles.since}>
+                    <ul className={styles.tech}>
                         <li>
                             <p>HTML + CSS</p>
                             <p><span>since:</span>{days(new Date('04/23/2020'), date_2)} Months</p>
