@@ -16,7 +16,10 @@ const Selector = ({ className }) => {
                     <span>StarCNTR</span>
                     <div className={styles.tech}></div>
                 </Box>
-                <Box className={styles.box}>Photezer</Box>
+                <Box className={styles.box}>
+                    <span>Photezer</span>
+                    <div className={styles.tech}></div>
+                </Box>
                 <Box className={styles.box}>Cinema</Box>
                 </div>
 

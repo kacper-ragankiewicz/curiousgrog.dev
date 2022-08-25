@@ -21,23 +21,10 @@ function Random(min, max) {
 }
 
 
-const useScript = ({ url }) => {
-    React.useEffect(() => {
-        const script = document.createElement('script');
-
-        script.src = url;
-        script.async = true;
-
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, [url]);
-}
 
 
 const About = ({ className }) => {
-
+    const [visible, setVisible] = React.useState(false);
 
     return (
         <div className={styles.body}>
@@ -70,7 +57,6 @@ const About = ({ className }) => {
                     <span className={styles.span}>Hi, My name is Kacper</span>
 
                     <p className={styles.paragraf}>I'm Fullstack Developer and Cyber Security researcher. For daily bases I spend most of my time on developing my projects and implementing new ideas.</p>
-                    {/* {useScript('https://tryhackme.com/badge/94886')} */}
                 </Box>
                 <Box
                     title="Known Technologies"
@@ -122,9 +108,22 @@ const About = ({ className }) => {
                         </li>
                     </ul>
                 </Box>
+                <Box
+                    title="Cybersecurity Cert's:"
+                >
+                    <div className={styles.badge}><img src="https://tryhackme-badges.s3.amazonaws.com/Roko.png" alt="TryHackMe"></img></div>
+                    <ul className={styles.cert}>
+                        <li onClick = {() => setVisible(!visible)}>COMPLETE BEGINNER</li>
+                    </ul>
+                </Box>
+                <Box></Box>
+                    <div className={cn(styles.comp, { [styles.visible]: visible })}>
+                        <span className={styles.close} onClick={()=> setVisible(!visible)}>x</span>
+                        <img src={require("../../assets/img/THM-QYGR1JFFXQ.png")}/>
+                    </div>
              </div>
         </div>
 
-    );
+);
 }
 export default About;

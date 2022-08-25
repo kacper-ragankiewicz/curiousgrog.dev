@@ -48,6 +48,98 @@
     margin: $box-height*0.15 0 0 130px
     animation: glow 2s linear
     padding: 0
+
+.badge
+    position: relative
+    height: 30vw
+    flex-wrap: wrap
+    gap: 1rem
+    list-style: none
+    justify-content: center
+    flex-wrap: wrap
+    padding: 1rem 0
+    img
+        flex: 1 1 110px
+        position: absolute
+        display: flex
+        justify-content: center
+        align-content: center
+        background: $n7
+        padding: 30px 2.9rem
+        border-radius: 50px
+        +m
+            padding: 30px 2rem
+
+.cert
+    display: flex
+    gap: 1rem
+    list-style: none
+    justify-content: center
+    flex-wrap: wrap
+    padding: 1rem 0
+    li
+        flex: 1 1 110px
+        text-align: center
+        padding: .6rem
+        border-radius: 2rem
+        background-color: $p6
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+        transition: 0.4s linear
+        font-weight: 400
+        animation: move 4s ease-in-out infinite
+        &:hover
+            cursor: pointer
+            color: $n7
+
+.comp
+    visibility: hidden
+    justify-content: center
+    top: 10%
+    left: 8%
+    border-radius: 50px
+    align-items: center
+    img
+        width: 100%
+        height: auto
+        padding: 20px
+    &.visible
+        position: fixed
+        visibility: visible
+        display: flex
+        background: $n8
+        z-index: 30
+        width: 85vw
+        height: 46vh
+        +m
+            width: 90vw
+            height: 70vh
+            top: 15%
+            left: 5%
+
+.close
+    cursor: pointer
+    position: absolute
+    display: flex
+    background: $n4
+    height: 30px
+    width: 30px
+    justify-content: center
+    align-content: center
+    text-align: center
+    padding: 15px
+    border-radius: 50%
+    opacity: 0.5
+    animation: opacity 3s linear infinite alternate-reverse both
+    &:hover
+        opacity: 1
+        animation: none
+    +m
+        padding: 2px
+@keyframes opacity
+    to
+        opacity: 0
+
+
 .deve
     font-weight: 300
     padding: 0
@@ -56,9 +148,9 @@
     padding: 0
     color: $p4
     transform: to-upper-case
-
     span
         margin-right: 10px
+        font-weight: 300
 
 @keyframes glow
     from
@@ -73,6 +165,7 @@
     gap: 1.5rem
     margin: 2rem auto auto
     flex-wrap: wrap
+
 .element
     display: flex
     gap: 1rem
@@ -89,9 +182,11 @@
         background-image: linear-gradient(to right, #38ce1d 0%, #4a5e4f 100%)
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
         transition: 0.4s linear
+        font-weight: 400
         animation: move 4s ease-in-out infinite
         &:hover
             cursor: pointer
+            color: $n7
 
 
 @keyframes move
