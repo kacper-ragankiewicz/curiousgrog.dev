@@ -89,15 +89,18 @@
         background-image: linear-gradient(to right, #38ce1d 0%, #4a5e4f 100%)
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
         transition: 0.4s linear
+        animation: move 4s ease-in-out infinite
         &:hover
             cursor: pointer
-            animation: move .4s ease-in-out infinite
 
 
 @keyframes move
-    0% { transform: translate(0,0)}
-    50% { transform: translate(0,4px)}
-    100%  { transform: translate(0,0)}
+    0%
+        transform: translate(0,0)
+    50%
+        transform: translate(0,4px)
+    100%
+        transform: translate(0,0)
 
 .wrap
     display: flex
