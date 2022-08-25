@@ -21,8 +21,23 @@ function Random(min, max) {
 }
 
 
+const useScript = ({ url }) => {
+    React.useEffect(() => {
+        const script = document.createElement('script');
+
+        script.src = url;
+        script.async = true;
+
+        document.body.appendChild(script);
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, [url]);
+}
+
 
 const About = ({ className }) => {
+
 
     return (
         <div className={styles.body}>
@@ -55,6 +70,7 @@ const About = ({ className }) => {
                     <span className={styles.span}>Hi, My name is Kacper</span>
 
                     <p className={styles.paragraf}>I'm Fullstack Developer and Cyber Security researcher. For dayly bases I spend most of my time on developing my projects and implementing new ideas.</p>
+                    <div>                {useScript('https://tryhackme.com/badge/94886')}</div>
                 </Box>
                 <Box
                     title="Known Technologies"
@@ -77,10 +93,35 @@ const About = ({ className }) => {
 
                 </Box>
                 <Box
-                    title="Writing code since:"
-                />
-            </div>
-            <div className={styles.wrap}>
+                    title="Using technology since:"
+                >
+                    <ul className={styles.since}>
+                        <li>
+                            <p>HTML + CSS</p>
+                            <p><span>since:</span>{days(new Date('04/23/2020'), date_2)} Months</p>
+                        </li>
+                        <li>
+                            <p>JavaScript</p>
+                            <p><span>since:</span>{days(new Date('02/23/2021'), date_2)} Months</p>
+                        </li>
+                        <li>
+                            <p>React</p>
+                            <p><span>since:</span>{days(new Date('12/12/2021'), date_2)} Months</p>
+                        </li>
+                        <li>
+                            <p>Python</p>
+                            <p><span>since:</span>{days(new Date('01/6/2022'), date_2)} Months</p>
+                        </li>
+                        <li>
+                            <p>Linux</p>
+                            <p><span>since:</span>{days(new Date('04/23/2019'), date_2)} Months</p>
+                        </li>
+                        <li>
+                            <p>SQL</p>
+                            <p><span>since:</span>{days(new Date('08/8/2021'), date_2)} Months</p>
+                        </li>
+                    </ul>
+                </Box>
              </div>
         </div>
 

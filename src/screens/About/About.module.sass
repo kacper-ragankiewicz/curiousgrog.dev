@@ -13,7 +13,8 @@
     height: $box-height
     background: $n5
     border-radius: 55px
-    margin-bottom: 10px
+    border: 2px solid
+    border-color: transparent $p6 $p6 transparent
     z-index: 10
     +m
         width: 95%
@@ -138,7 +139,7 @@
     transform-origin: 50% 50% 0px
 
 .object:nth-child(1) //React
-    margin: -120px 0 0 -90px
+    margin: -120px 0 0 -110px
     animation-delay: 0.15s
     animation: ball-up 11.8s linear infinite alternate-reverse
 .object:nth-child(2) //Sass
@@ -160,11 +161,10 @@
 .object:nth-child(6) //CSS
     margin: 30px 0 0 90px
     animation-delay: 0.15s
-    opacity: 0.7
+
     animation: ball-up 11.8s linear infinite alternate-reverse
-    opacity: 0.8
 .object:nth-child(7) //HTML
-    margin: -70px 0 0 40px
+    margin: -60px 0 0 40px
     animation-delay: 0.15s
     opacity: 0.7
     animation: ball-down 11.8s linear infinite alternate-reverse
@@ -174,22 +174,22 @@
     opacity: 0.7
     animation: ball-down 11.8s linear infinite alternate-reverse
 .object:nth-child(9) //Python
-    margin: -20px 0 0 -60px
+    margin: -10px 0 0 -60px
     animation-delay: 0.15s
     opacity: 0.7
     animation: ball-down 11.8s linear infinite alternate-reverse
 .object:nth-child(10) //OWASP10
-    margin: 30px 0 0 10px
+    margin: 30px 0 0 30px
     animation-delay: 0.15s
     opacity: 0.7
     animation: ball-down 11.8s linear infinite alternate-reverse
 .object:nth-child(11) //Linux
-    margin: -40px 0 0 120px
+    margin: -30px 0 0 120px
     animation-delay: 0.15s
     opacity: 0.7
     animation: ball-down 11.8s linear infinite alternate-reverse
 .object:nth-child(12) //C++
-    margin: -80px 0 0 -80px
+    margin: -70px 0 0 -80px
     animation-delay: 0.15s
     opacity: 0.7
     animation: ball-down 11.8s linear infinite alternate-reverse
@@ -212,3 +212,25 @@
   75% { transform: rotate(-1deg); }
   100% { transform: rotate(0deg); }
 
+.since
+    display: flex
+    gap: 1rem
+    list-style: none
+    justify-content: center
+    flex-wrap: wrap
+    color: $n1
+    padding: 1rem 0
+    li
+        flex: 1 1 110px
+        text-align: center
+        padding: 2px .5rem
+        border-radius: 2rem
+        background-color: $n6
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+        transition: 0.4s linear
+        span
+            font-weight: 300
+            color: $p4
+        &:hover
+            cursor: pointer
+            animation: move .4s ease-in-out infinite
