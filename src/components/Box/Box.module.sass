@@ -1,16 +1,18 @@
 @import ../../assets/main
 
 .box
+    flex: 1 1 340px
     background: $n5
-    width: 42%
-    border-radius: 25px
-    height: $box-height * 2
-    margin: 10px
-    padding: 30px
+    border-radius: 3rem
+    padding: 3.5rem 2rem
+    position: relative
+    backdrop-filter: blur(100px)
     animation: grow .5s ease-in-out
     +m
-        margin: 20px auto auto 0
-        width: 80%
+        margin: 0 auto auto 0
+        width: 79%
+        flex: none
+
 @keyframes grow
     from
         border-radius: 0
@@ -22,7 +24,7 @@
     display: flex
     align-items: center
     min-height: 40px
-    margin-bottom: 32px
+    margin-bottom: 20px
     +m
         margin-bottom: 10px
 

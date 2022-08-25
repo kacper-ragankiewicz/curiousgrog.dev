@@ -34,7 +34,7 @@ const Home = ({ className }) => {
                     three={content.bar[2]}
                 />
             </div>
-            <Selector />
+            {/* <Selector /> */}
         </div>
     );
 }
