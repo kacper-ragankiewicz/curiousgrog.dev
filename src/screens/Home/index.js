@@ -38,9 +38,10 @@ const Home = ({ className }) => {
             <dic className={styles.title}>My projects:</dic>
                 <Spans
                     title="StarCNTR"
-                    object={["React", "NodeJS", "Sass", "SQL"]}
+                    object={["React", "NodeJS", "Sass", "SQL", "Figma", "API"]}
                     className={styles.spans}
                     desc="Web APP with logging and API"
+                    img={require("../../assets/img/StarCNTR.png")}
                 ></Spans>
                 <Spans
                     title="Photezer"
@@ -57,6 +58,21 @@ const Home = ({ className }) => {
                     desc="This website"
                     url="/"
                     buttonSpan="You are here!"
+                ></Spans>
+                <Spans
+                    title="Cinema"
+                    object={["Django", "PostgreSQL", "HTML + CSS","Bootstrap"]}
+                    className={styles.spans}
+                    liStyle={styles.list}
+                    desc="Online cinema website"
+                ></Spans>
+                <Spans
+                    title="Amazingkidsacademy"
+                    object={["HTML + CSS", "Bootstrap","Server"]}
+                    className={styles.spans}
+                    liStyle={styles.list}
+                    desc="Comercial website for enterteiment company"
+                    url="http://amazingkidsacademy.pl"
                 ></Spans>
             </div>
         </div>

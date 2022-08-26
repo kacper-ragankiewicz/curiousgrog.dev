@@ -11,8 +11,11 @@ const Spans = ({
     object,
     liStyle,
     desc,
+    img,
     url,
 }) => {
+    const [visible, setVisible] = React.useState(false);
+
     return(
         <Box
             title={title}
@@ -31,9 +34,18 @@ const Spans = ({
                 {object[8] && <li>{object[8]}</li>}
                 {object[9] && <li>{object[9]}</li>}
             </ul>
-            {url && <div className={styles.wrap}><button className={styles.button}>
+            {url || img ?
+            <div className={styles.wrap}>
+                {img &&
+                    <button className={styles.button} onClick={()=> setVisible(!visible)}><a>Show me</a></button>}
+                        <div className={cn(styles.comp, { [styles.visible]: visible })}>
+                            <span className={styles.close} onClick={()=> setVisible(!visible)}>x</span>
+                            <img src={img} alt=""/>
+                        </div>
+                {url &&    <button className={styles.button}>
                     <a href={url}>{buttonSpan ? buttonSpan : "Check out"}</a>
-                </button></div>}
+                </button> }
+            </div> : null}
         </Box>
     );
 }

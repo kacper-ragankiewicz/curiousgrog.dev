@@ -5,6 +5,7 @@
     height: 70px
     background: $m6
     border-radius: 50px
+    border: 2px solid $m2
     position: relative
     display: flex
     align-content: center
@@ -18,25 +19,18 @@
         +m
         margin: 13px 0 0 0
 
-.curve
-    position: absolutei
-    aspect-ratio: 960/300
-    background-repeat: no-repeat
-    background-position: center
-    background-size: cover
-    height: auto
-    display: flex
-    width: 100%
-
 %box
     padding: 5px 0 0 5px
     width: 35%
-    min-width: 110px !important
+    min-width: 110px
     display: flex
     background: transparent
     align-content: center
     justify-content: center
     z-index: 10
+    +m
+        font-size: 15px
+        min-width: 80px
 
 .boxone
     @extend %box
@@ -51,5 +45,7 @@
     font-size: 25px
     padding: 6px
     transition: linear 0.2s
+    +m
+        padding: 6px
     &.active
         color: $p4
