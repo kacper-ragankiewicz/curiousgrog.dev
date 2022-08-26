@@ -34,8 +34,8 @@ const Home = ({ className }) => {
                     three={content.bar[2]}
                 />
             </div>
-            <dic className={styles.title}>My projects</dic>
             <div className={styles.holder}>
+            <dic className={styles.title}>My projects:</dic>
                 <Spans
                     title="StarCNTR"
                     object={["React", "NodeJS", "Sass", "SQL"]}
