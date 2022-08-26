@@ -3,15 +3,17 @@
 .body
     width: 100%
     height: auto
-    margin: 40px auto auto 0
-    +m
-        padding: 10px
+    margin: 40px 0 0 0
+    top: 0
+    left: 0
+
 .header
     z-index: 20
     position: relative
     width: 100%
     height: $box-height
-    background: $n5
+    margin: 10px
+    background: $m2
     border-radius: 55px
     border: 2px solid
     border-color: transparent $p6 $p6 transparent
@@ -60,7 +62,7 @@
         display: flex
         justify-content: center
         align-content: center
-        background: $n7
+        background: $m4
         padding: 30px 2.9rem
         border-radius: 50px
 
@@ -76,14 +78,14 @@
         text-align: center
         padding: .6rem
         border-radius: 2rem
-        background-color: $p6
+        background-color: $m4
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
         transition: 0.4s linear
         font-weight: 400
         animation: move 4s ease-in-out infinite
         &:hover
             cursor: pointer
-            color: $n7
+            color: $m1
 
 .comp
     visibility: hidden
@@ -108,13 +110,13 @@
         opacity: .9
         position: absolute
         display: flex
-        background: $n5
+        background: $m4
 
 .close
     cursor: pointer
     position: absolute
     display: flex
-    background: $n4
+    background: $m4
     height: 30px
     width: 30px
     justify-content: center
@@ -140,7 +142,7 @@
 
 .since
     padding: 0
-    color: $p4
+    color: $m5
     transform: to-upper-case
     span
         margin-right: 10px
@@ -155,8 +157,8 @@
 
 .skills
     li
-        background: $n7
-        background-image: linear-gradient(to right, #38ce1d 0%, #4a5e4f 100%) !important
+        background: $m1
+        background-image: linear-gradient(to right, $m4 0%, $m5 100%) !important
 
 
 .holder
@@ -164,6 +166,10 @@
     gap: 1.5rem
     margin: 2rem auto auto
     flex-wrap: wrap
+    +m
+        justify-content: center
+        align-content: center
+        display: flex
 
 .wrap
     display: flex
@@ -197,19 +203,19 @@
     list-style: none
     justify-content: center
     flex-wrap: wrap
-    color: $n1
+    color: $m3
     padding: 1rem 0
     li
         flex: 1 1 110px
         text-align: center
         padding: 2px .5rem
         border-radius: 2rem
-        background-color: $n6
+        background-color: $m4
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
         transition: 0.4s linear
         span
             font-weight: 300
-            color: $p4
+            color: $m5
         &:hover
             cursor: pointer
             animation: move .4s ease-in-out infinite
