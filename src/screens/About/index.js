@@ -4,26 +4,16 @@ import cn from "classnames";
 
 // components
 import Box from "../../components/Box";
-const date_1 = new Date('8/25/2021');
-const date_2 = new Date();
+import Shower from "../../components/Shower";
+import Spans from "../../components/Spans";
 
-const days = (date_1, date_2) => {
-    let difference = date_1.getTime() - date_2.getTime();
-    let TotalDays = Math.ceil(((difference * -1 ) / (1000 * 3600 * 24))/30);
-    return TotalDays;
-}
-
-function Random(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-
-    return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
+// scripts
+import { Date as days } from "../../scripts/Date";
 
 
 
 const About = ({ className }) => {
+    const date_2 = new Date();
     const [visible, setVisible] = React.useState(false);
 
     return (
@@ -35,22 +25,22 @@ const About = ({ className }) => {
                 <div className={styles.name}>
                     <span>Kacper</span>
                     <div className={styles.deve}>Fullstack Developer</div>
-                    <div className={styles.since}><span>since:</span>{days(date_1,date_2)} Months</div>
+                    <div className={styles.since}><span>since:</span>{days(new Date('8/25/2021'),date_2)} Months</div>
                 </div>
             </div>
             <div className={styles.holder}>
-                <Box
+                <Spans
                     title="Skills"
-                >
-                    <ul className={styles.element}>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>React</li>
-                        <li>CSS</li>
-                        <li>NodeJS</li>
-                        <li>SQL</li>
-                    </ul>
-                </Box>
+                    className={styles.skills}
+                    object={[
+                        "JavaScript",
+                        "TypeScript",
+                        "React",
+                        "CSS",
+                        "NodeJS",
+                        "SQL"
+                    ]}
+                />
                 <Box
                     title="About"
                 >
@@ -58,26 +48,23 @@ const About = ({ className }) => {
 
                     <p className={styles.paragraf}>I'm Fullstack Developer and Cyber Security researcher. For daily bases I spend most of my time on developing my projects and implementing new ideas.</p>
                 </Box>
-                <Box
+                <Shower
                     title="Known Technologies"
-                    className={styles.know}
-                >
-                <div className={styles.elementwrapper}>
-                        <span className={styles.object}>React</span>
-                        <span className={styles.object}>Sass</span>
-                        <span className={styles.object}>NodeJS</span>
-                        <span className={styles.object}>SQL</span>
-                        <span className={styles.object}>JavaScript</span>
-                        <span className={styles.object}>CSS</span>
-                        <span className={styles.object}>HTML</span>
-                        <span className={styles.object}>PostgreSQL</span>
-                        <span className={styles.object}>Python</span>
-                        <span className={styles.object}>OWASP10</span>
-                        <span className={styles.object}>Linux</span>
-                        <span className={styles.object}>C++</span>
-                </div>
-
-                </Box>
+                    object={[
+                        "React",
+                        "Sass",
+                        "NodeJS",
+                        "SQL",
+                        "JavaScript",
+                        "CSS",
+                        "HTML",
+                        "PostgreSQL",
+                        "Python",
+                        "OWASP10",
+                        "Linux",
+                        "C++"
+                    ]}
+                />
                 <Box
                     title="Using technology since:"
                 >

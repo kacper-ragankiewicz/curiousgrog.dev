@@ -153,43 +153,17 @@
     to
         opacity: 1
 
+.skills
+    li
+        background: $n7
+        background-image: linear-gradient(to right, #38ce1d 0%, #4a5e4f 100%) !important
+
 
 .holder
     display: flex
     gap: 1.5rem
     margin: 2rem auto auto
     flex-wrap: wrap
-
-.element
-    display: flex
-    gap: 1rem
-    list-style: none
-    justify-content: center
-    flex-wrap: wrap
-    padding: 1rem 0
-    li
-        flex: 1 1 110px
-        text-align: center
-        padding: .6rem
-        border-radius: 2rem
-        background-color: $n7
-        background-image: linear-gradient(to right, #38ce1d 0%, #4a5e4f 100%)
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-        transition: 0.4s linear
-        font-weight: 400
-        animation: move 4s ease-in-out infinite
-        &:hover
-            cursor: pointer
-            color: $n7
-
-
-@keyframes move
-    0%
-        transform: translate(0,0)
-    50%
-        transform: translate(0,4px)
-    100%
-        transform: translate(0,0)
 
 .wrap
     display: flex
@@ -209,93 +183,6 @@
     text-align: left
     font-weight: 400
 
-.elementwrapper
-    position: relative
-    font-size: 30px
-    font-weight: 300
-    font-family: Lato, sans-serif
-    padding: 0
-    margin: 0 auto auto 0
-    width: 80%
-    height: 300px
-    +m
-        width: 70%
-
-.object
-    will-change: transform, opacity, filter
-    position: absolute
-    top: 50%
-    left: 50%
-    z-index: 1
-    opacity: 1
-    transform-origin: 50% 50% 0px
-
-.object:nth-child(1) //React
-    margin: -120px 0 0 -110px
-    animation-delay: 0.15s
-    animation: ball-up 11.8s linear infinite alternate-reverse
-.object:nth-child(2) //Sass
-    margin: -70px 0 0 -40px
-    animation-delay: 0.15s
-    animation: ball-up 11.8s linear infinite alternate-reverse
-.object:nth-child(3) //NodeJS
-    margin: 30px 0 0 -100px
-    animation-delay: 0.15s
-    animation: ball-up 11.8s linear infinite alternate-reverse
-.object:nth-child(4) //SQL
-    margin: -10px 0 0 20px
-    animation-delay: 0.15s
-    animation: ball-up 11.8s linear infinite alternate-reverse
-.object:nth-child(5) //JavaScript
-    margin: -120px 0 0 10px
-    animation-delay: 0.15s
-    animation: ball-up 11.8s linear infinite alternate-reverse
-.object:nth-child(6) //CSS
-    margin: 30px 0 0 90px
-    animation-delay: 0.15s
-
-    animation: ball-up 11.8s linear infinite alternate-reverse
-.object:nth-child(7) //HTML
-    margin: -60px 0 0 40px
-    animation-delay: 0.15s
-    opacity: 0.7
-    animation: ball-down 11.8s linear infinite alternate-reverse
-.object:nth-child(8) //PostgreSQL
-    margin: 90px 0 0 -20px
-    animation-delay: 0.15s
-    opacity: 0.7
-    animation: ball-down 11.8s linear infinite alternate-reverse
-.object:nth-child(9) //Python
-    margin: -10px 0 0 -60px
-    animation-delay: 0.15s
-    opacity: 0.7
-    animation: ball-down 11.8s linear infinite alternate-reverse
-.object:nth-child(10) //OWASP10
-    margin: 30px 0 0 30px
-    animation-delay: 0.15s
-    opacity: 0.7
-    animation: ball-down 11.8s linear infinite alternate-reverse
-.object:nth-child(11) //Linux
-    margin: -30px 0 0 120px
-    animation-delay: 0.15s
-    opacity: 0.7
-    animation: ball-down 11.8s linear infinite alternate-reverse
-.object:nth-child(12) //C++
-    margin: -70px 0 0 -80px
-    animation-delay: 0.15s
-    opacity: 0.7
-    animation: ball-down 11.8s linear infinite alternate-reverse
-
-@keyframes ball-up
-    to
-        transform: translate3d(25px,20px,0)
-        scale: 1.2
-
-@keyframes ball-down
-    to
-        transform: translate3d(-25px,-20px,0)
-        scale: 0.7
-        backdrop-filter: blure(100px)
 
 @keyframes tilt-shaking
   0% { transform: rotate(0deg); }

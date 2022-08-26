@@ -6,7 +6,7 @@ import styles from "./Home.module.sass";
 import Slidebox from "../../components/Slidebox";
 import Span from "../../components/Span";
 import Bar from "../../components/Bar";
-import Selector from "../../components/Selector";
+import Spans from "../../components/Spans";
 
 const content = {
     paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and always trying to improve my skills.",
@@ -34,7 +34,31 @@ const Home = ({ className }) => {
                     three={content.bar[2]}
                 />
             </div>
-            {/* <Selector /> */}
+            <dic className={styles.title}>My projects</dic>
+            <div className={styles.holder}>
+                <Spans
+                    title="StarCNTR"
+                    object={["React", "NodeJS", "Sass", "SQL"]}
+                    className={styles.spans}
+                    desc="Web APP with logging and API"
+                ></Spans>
+                <Spans
+                    title="Photezer"
+                    object={["Frontend", "HTML + CSS", "JavaScript"]}
+                    className={styles.spans}
+                    desc="Simple website for photography"
+                    url="https://photezer.vercel.app"
+                ></Spans>
+                <Spans
+                    title="curiousgrog.dev"
+                    object={["React", "Sass", "Animations"]}
+                    className={styles.spans}
+                    liStyle={styles.list}
+                    desc="This website"
+                    url="/"
+                    buttonSpan="You are here!"
+                ></Spans>
+            </div>
         </div>
     );
 }
