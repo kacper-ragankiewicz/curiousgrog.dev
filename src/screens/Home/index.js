@@ -7,6 +7,7 @@ import Slidebox from "../../components/Slidebox";
 import Span from "../../components/Span";
 import Bar from "../../components/Bar";
 import Spans from "../../components/Spans";
+import Waves from "../../components/Waves";
 
 const content = {
     paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and always trying to improve my skills.",
@@ -17,8 +18,7 @@ const Home = ({ className }) => {
 
     return (
         <div className={styles.header}>
-            <div className={styles.hidder}
-            >
+            <div className={styles.hidder}>
                 <div className={styles.body}>
                     <Span
                         title="Fullstack"
@@ -37,11 +37,12 @@ const Home = ({ className }) => {
             <div className={styles.holder}>
             <dic className={styles.title}>My projects:</dic>
                 <Spans
-                    title="StarCNTR"
+                    title="DevsCNTR"
                     object={["React", "NodeJS", "Sass", "SQL", "Figma", "API"]}
                     className={styles.spans}
                     desc="Web APP with logging and API"
                     img={require("../../assets/img/StarCNTR.png")}
+                    url="https://devscntr.com/"
                 ></Spans>
                 <Spans
                     title="Photezer"
@@ -73,6 +74,14 @@ const Home = ({ className }) => {
                     liStyle={styles.list}
                     desc="Comercial website for enterteiment company"
                     url="http://amazingkidsacademy.pl"
+                ></Spans>
+                <Spans
+                    title="Cryptomage S.A."
+                    object={["React/JSX", "NodeJS","PostgreSQL","BigDATA"]}
+                    className={styles.spans}
+                    liStyle={styles.list}
+                    desc="Worked on NDR probe"
+                    url="https://www.cryptomage.com/"
                 ></Spans>
             </div>
         </div>
