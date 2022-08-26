@@ -46,7 +46,7 @@ const About = ({ className }) => {
                 >
                     <span className={styles.span}>Hi, My name is Kacper</span>
 
-                    <p className={styles.paragraf}>I'm Fullstack Developer and Cyber Security researcher. For daily bases I spend most of my time on developing my projects and implementing new ideas.</p>
+                    <p className={styles.paragraf}>I'm <span>Fullstack Developer</span> and <span>Cyber Security</span> researcher. For daily bases I spend most of my time on developing my projects and implementing new ideas.</p>
                 </Box>
                 <Shower
                     title="Known Technologies"

@@ -11,20 +11,28 @@
     +m
         background: $m1
         padding: 0
-    
 
 .header
     z-index: 20
     position: relative
-    width: 100%
+    width: 95%
     height: $box-height
-    background: $m2
+    background: $m4
     border-radius: 55px
     border: 2px solid
-    border-color: transparent $p6 $p6 transparent
+    box-shadow: 0 10px 26px #ece8e834, 0 6px 26px #8b818115
+    border-color: transparent $m5 $m5 transparent
     z-index: 10
-    +m
-        width: 95%
+    margin: auto
+    animation: glow-anim 3s ease-in-out infinite
+
+@keyframes glow-anim
+    0%
+    50%
+        box-shadow: none
+    100%
+
+
 .image
     display: flex
     position: absolute
@@ -189,10 +197,25 @@
 
 .span
     font-weight: 550
+    font-size: 1.3rem
+    &::before
+        content: ':~# echo "'
+        font-weight: 300
+    &::after
+        content: '"'
+        font-weight: 300
 
 .paragraf
     text-align: left
     font-weight: 400
+    span
+        font-weight: 700
+        animation: highlite-text 7s linear alternate-reverse both
+
+@keyframes highlite-text
+    to
+        color: $m5
+
 
 
 @keyframes tilt-shaking
@@ -221,6 +244,8 @@
         span
             font-weight: 300
             color: $m5
+        p
+            font-weight: 450
         &:hover
             cursor: pointer
             animation: move .4s ease-in-out infinite
