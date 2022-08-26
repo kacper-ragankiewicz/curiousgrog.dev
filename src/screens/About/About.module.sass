@@ -51,15 +51,17 @@
 
 .badge
     position: relative
-    height: 30vw
+    height: auto
     flex-wrap: wrap
     gap: 1rem
     list-style: none
+    margin-top: 80px
+    display: flex
     justify-content: center
+    align-content: center
+    background: $n1
     flex-wrap: wrap
-    padding: 1rem 0
     img
-        flex: 1 1 110px
         position: absolute
         display: flex
         justify-content: center
@@ -71,6 +73,7 @@
             padding: 30px 2rem
 
 .cert
+    margin-top: 10vh
     display: flex
     gap: 1rem
     list-style: none
@@ -93,29 +96,28 @@
 
 .comp
     visibility: hidden
+    position: absolute
+    display: flex
+    width: 100%
+    height: 100%
     justify-content: center
-    top: 10%
-    left: 8%
-    border-radius: 50px
     align-items: center
+    opacity: 0
+    top: 0
+    left: 0
+    border-radius: 50px
+    overflow: hidden
+    transition: .3s
     img
         width: 100%
         height: auto
-        padding: 20px
+        padding: 10px
     &.visible
-        position: fixed
         visibility: visible
+        opacity: 1
+        position: absolute
         display: flex
         background: $n8
-        z-index: 30
-        width: 85vw
-        height: 46vh
-        +m
-            width: 90vw
-            height: 70vh
-            top: 15%
-            left: 5%
-
 .close
     cursor: pointer
     position: absolute

@@ -115,12 +115,12 @@ const About = ({ className }) => {
                     <ul className={styles.cert}>
                         <li onClick = {() => setVisible(!visible)}>COMPLETE BEGINNER</li>
                     </ul>
-                </Box>
-                <Box></Box>
                     <div className={cn(styles.comp, { [styles.visible]: visible })}>
                         <span className={styles.close} onClick={()=> setVisible(!visible)}>x</span>
                         <img src={require("../../assets/img/THM-QYGR1JFFXQ.png")}/>
                     </div>
+                </Box>
+                <Box></Box>
              </div>
         </div>
 
