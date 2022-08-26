@@ -1,18 +1,22 @@
 @import ../../assets/main
 
 .body
-    width: 100%
+    width: 100vw
+    padding: 10px
+    position: relative
     height: auto
-    margin: 40px 0 0 0
-    top: 0
-    left: 0
+    margin-top: 40px
+    background: $m6
+    +m
+        background: $m1
+        padding: 0
+    
 
 .header
     z-index: 20
     position: relative
     width: 100%
     height: $box-height
-    margin: 10px
     background: $m2
     border-radius: 55px
     border: 2px solid
