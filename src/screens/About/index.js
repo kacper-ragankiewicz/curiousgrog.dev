@@ -111,7 +111,9 @@ const About = ({ className }) => {
                 <Box
                     title="Cybersecurity Cert's:"
                 >
-                    <div className={styles.badge}><img src="https://tryhackme-badges.s3.amazonaws.com/Roko.png" alt="TryHackMe"></img></div>
+                    <div className={styles.badge}>
+                        <img src="https://tryhackme-badges.s3.amazonaws.com/Roko.png" alt="TryHackMe"></img>
+                    </div>
                     <ul className={styles.cert}>
                         <li onClick = {() => setVisible(!visible)}>COMPLETE BEGINNER</li>
                     </ul>
