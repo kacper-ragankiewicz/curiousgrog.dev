@@ -37,9 +37,10 @@ const About = ({ className }) => {
                         "JavaScript",
                         "TypeScript",
                         "React",
-                        "CSS",
+                        "CSS/Sass",
                         "NodeJS",
-                        "SQL"
+                        "SQL",
+                        "Information Technology",
                     ]}
                 />
                 <Box
