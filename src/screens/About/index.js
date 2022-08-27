@@ -12,6 +12,7 @@ import { Date as days } from "../../scripts/Date";
 
 
 
+
 const About = ({ className }) => {
     const date_2 = new Date();
     const [visible, setVisible] = React.useState(false);
@@ -109,7 +110,14 @@ const About = ({ className }) => {
                         <img src={require("../../assets/img/THM-QYGR1JFFXQ.png")}/>
                     </div>
                 </Box>
-                <Box></Box>
+                <Spans
+                    title="curiousgrog.dev"
+                    object={["React", "Sass", "Animations"]}
+                    className={styles.spans}
+                    desc="This website"
+                    url="/"
+                    buttonSpan="You are here!"
+                ></Spans>
              </div>
         </div>
 
