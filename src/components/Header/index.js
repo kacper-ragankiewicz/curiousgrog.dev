@@ -33,7 +33,7 @@ const Header = ({ className }) => {
                             </button>
                             <div className={styles.menu}>
                             <div className={styles.header}>
-                                <span className={styles.span}>menu</span>
+                                <span>menu</span>
                             </div>
                             <div className={styles.box}>
                                     <ul className={styles.navitem}>

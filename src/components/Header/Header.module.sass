@@ -72,6 +72,7 @@
                 visibility: visible
                 background: $n7
                 opacity: 1
+                width: 35%
                 transform: translateX(-100vw)
         .navitem
             display: inline-block
@@ -82,10 +83,12 @@
             justify-content: flex-start
         .list
             background: $n7
-.span
-    display: flex
-    position: relative
-    align-content: center
-    justify-content: center
-    background: $n5
 
+.header
+    span
+        display: flex
+        position: relative
+        align-content: center
+        background: $n5
+        +t
+            justify-content: center
