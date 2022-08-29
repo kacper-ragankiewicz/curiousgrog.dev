@@ -8,6 +8,7 @@ import Page from "./components/Page";
 // screens
 import Home from "./screens/Home";
 import About from "./screens/About";
+import Contact from "./screens/Contact";
 import Jumy from "./screens/Jumy";
 
 
@@ -31,6 +32,15 @@ function App() {
             <Page>
               <About />
             </Page>
+          )}
+        />
+        <Route
+        exact
+        path={Routes.CONTACT}
+        render={() => (
+          <Page>
+            <Contact />
+          </Page>
           )}
         />
         <Route

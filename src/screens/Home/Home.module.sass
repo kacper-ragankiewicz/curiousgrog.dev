@@ -17,7 +17,7 @@
     +x
         margin-left: 50px
     +m
-        padding-top: 50px
+        padding-top: 60px
         margin-left: 0
 .hidder
     z-index: 10
@@ -30,13 +30,17 @@
         padding: 11
 
 .holder
-    display: flex
-    gap: 1.5rem
-    margin: 2rem auto auto
-    flex-wrap: wrap
-    background: $m6
-    padding: 20px
-    border-radius: 50px
+    opacity: 0
+    transition: 2s
+    &.active
+        opacity: 1
+        display: flex
+        gap: 1.5rem
+        margin: 2rem auto auto
+        flex-wrap: wrap
+        background: $m6
+        padding: 20px
+        border-radius: 50px
 
 .spans
     li
@@ -58,4 +62,3 @@
         background: $m6
         margin: 1rem
         padding: .2rem 0
-

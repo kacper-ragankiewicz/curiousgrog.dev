@@ -15,6 +15,15 @@ const content = {
 };
 
 const Home = ({ className }) => {
+    const [visible, setVisible] = React.useState(false)
+
+    const changeValueScroll = () => {
+        const scrollvalue = document.documentElement.scrollTop;
+
+        if(scrollvalue>100) setVisible(true)
+    }
+
+    window.addEventListener('scroll', changeValueScroll)
 
     return (
         <div className={styles.header}>
@@ -34,7 +43,7 @@ const Home = ({ className }) => {
                     three={content.bar[2]}
                 />
             </div>
-            <div className={styles.holder}>
+            <div className={cn(styles.holder, { [styles.active]: visible})}>
             <dic className={styles.title}>My projects:</dic>
                 <Spans
                     title="DevsCNTR"
