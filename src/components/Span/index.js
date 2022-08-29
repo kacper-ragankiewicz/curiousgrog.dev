@@ -19,14 +19,13 @@ const Span = ({
 
     return (
         <>
-            <div className={styles.body}>
+            <div className={cn(styles.body, className)}>
                 <span className={styles.span}>{title}<span className={styles.linearwipe}>{wipe}</span></span>
                 <p className={styles.paragraf}>
                     {paragraf}
                 </p>
                 <button
                     className={cn(styles.button, { [styles.move]:move })}
-                    onClick={() => setMove(!move)}
                     >
                     <a href={link} className={styles.link}>
                         {button}

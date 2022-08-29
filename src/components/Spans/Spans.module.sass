@@ -17,9 +17,6 @@
         transition: 0.4s linear
         font-weight: 400
         animation: move 4s ease-in-out infinite
-        &:hover
-            cursor: pointer
-            color: $n7
 
 .desc
     font-weight: 300
@@ -71,15 +68,17 @@
     overflow: hidden
     transition: .3s
     img
-        width: 100%
+        width: 75%
         height: auto
-        padding: 10px
+        +m
+            width: 85%
     &.visible
         visibility: visible
         opacity: .9
         position: absolute
         display: flex
         background: $m4
+
 
 .close
     cursor: pointer

@@ -7,6 +7,7 @@ import Slidebox from "../../components/Slidebox";
 import Span from "../../components/Span";
 import Bar from "../../components/Bar";
 import Spans from "../../components/Spans";
+import Shower from "../../components/Shower";
 
 const content = {
     paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and always trying to improve my skills.",
@@ -40,7 +41,7 @@ const Home = ({ className }) => {
                 />
             </div>
             <div className={cn(styles.holder, { [styles.active]: visible})}>
-            <dic className={styles.title}>My projects:</dic>
+            <div className={styles.title}>My projects:</div>
                 <Spans
                     title="DevsCNTR"
                     object={["React", "NodeJS", "Sass", "SQL", "Figma", "API"]}
@@ -71,6 +72,7 @@ const Home = ({ className }) => {
                     className={styles.spans}
                     liStyle={styles.list}
                     desc="Online cinema website"
+                    img={require("../../assets/img/Django.png")}
                 ></Spans>
                 <Spans
                     title="Amazingkidsacademy"
@@ -80,14 +82,16 @@ const Home = ({ className }) => {
                     desc="Comercial website for enterteiment company"
                     url="http://amazingkidsacademy.pl"
                 ></Spans>
-                <Spans
-                    title="Cryptomage S.A."
-                    object={["React/JSX", "NodeJS","PostgreSQL","BigDATA"]}
-                    className={styles.spans}
-                    liStyle={styles.list}
-                    desc="Worked on NDR probe"
-                    url="https://www.cryptomage.com/"
-                ></Spans>
+            </div>
+            <div className={styles.conteiner}>
+                <Span
+                    title="If your whant to know more "
+                    wipe=" about me."
+                    button="Check out"
+                    className={styles.spaner}
+                    link={"/about"}
+                />
+                <div className={styles.dot}/>
             </div>
         </div>
     );
