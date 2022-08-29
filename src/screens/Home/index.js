@@ -7,7 +7,7 @@ import Slidebox from "../../components/Slidebox";
 import Span from "../../components/Span";
 import Bar from "../../components/Bar";
 import Spans from "../../components/Spans";
-import Shower from "../../components/Shower";
+import Waves from "../../components/Waves";
 
 const content = {
     paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and always trying to improve my skills.",
@@ -33,6 +33,7 @@ const Home = ({ className }) => {
                         wipe=" developer"
                         paragraf={content.paragraf}
                         button="Contact me"
+                        link="/contact"
                     />
                     <Slidebox/>
                 </div>
@@ -91,7 +92,6 @@ const Home = ({ className }) => {
                     className={styles.spaner}
                     link={"/about"}
                 />
-                <div className={styles.dot}/>
             </div>
         </div>
     );
