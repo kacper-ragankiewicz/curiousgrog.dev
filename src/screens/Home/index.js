@@ -7,11 +7,9 @@ import Slidebox from "../../components/Slidebox";
 import Span from "../../components/Span";
 import Bar from "../../components/Bar";
 import Spans from "../../components/Spans";
-import Waves from "../../components/Waves";
 
 const content = {
     paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and always trying to improve my skills.",
-    bar: ["Frontend", "Backend", "Security"]
 };
 
 const Home = ({ className }) => {
@@ -38,9 +36,7 @@ const Home = ({ className }) => {
                     <Slidebox/>
                 </div>
                 <Bar
-                    one={content.bar[0]}
-                    two={content.bar[1]}
-                    three={content.bar[2]}
+                    object={["Frontend", "Backend", "Security"]}
                 />
             </div>
             <div className={cn(styles.holder, { [styles.active]: visible})}>

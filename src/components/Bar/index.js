@@ -4,7 +4,7 @@ import styles from "./Bar.module.sass";
 
 import Waves from "../Waves";
 
-const Bar = ({ className, one, two, three }) => {
+const Bar = ({ className, object }) => {
   const [lightone, setLightone] = React.useState(true);
   const [lighttwo, setLighttwo] = React.useState(false);
   const [lightthree, setLightthree] = React.useState(false);
@@ -30,30 +30,30 @@ const Bar = ({ className, one, two, three }) => {
 
   return (
     <>
-        <div className={styles.bar}>
+        <div className={cn(styles.bar, className)}>
             <div className={styles.boxone}>
                 <div
-                    className={cn(styles.number, className, {
+                    className={cn(styles.number, {
                       [styles.active]: lightone,
                     })}
                 >1</div>
-                <span>{one}</span>
+                <span>{object[0]}</span>
             </div>
             <div className={styles.boxone}>
                 <div
-                    className={cn(styles.number, className, {
+                    className={cn(styles.number, {
                       [styles.active]: lighttwo,
                     })}
                 >2</div>
-                <span>{two}</span>
+                <span>{object[1]}</span>
             </div>
                 <div className={styles.boxone}>
                 <div
-                    className={cn(styles.number, className, {
+                    className={cn(styles.number, {
                       [styles.active]: lightthree,
                     })}
                 >3</div>
-                <span>{three}</span>
+                <span>{object[2]}</span>
             </div>
         </div>
     </>
