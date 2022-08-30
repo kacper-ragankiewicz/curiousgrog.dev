@@ -73,27 +73,27 @@ const About = ({ className }) => {
                     <ul className={styles.tech}>
                         <li>
                             <p>HTML + CSS</p>
-                            <p><span>since:</span>{days(new Date('04/23/2020'), date_2)} Months</p>
+                            <p><span>since: </span>{days(new Date('04/23/2020'), date_2)} Months</p>
                         </li>
                         <li>
                             <p>JavaScript</p>
-                            <p><span>since:</span>{days(new Date('02/23/2021'), date_2)} Months</p>
+                            <p><span>since: </span>{days(new Date('02/23/2021'), date_2)} Months</p>
                         </li>
                         <li>
                             <p>React</p>
-                            <p><span>since:</span>{days(new Date('12/12/2021'), date_2)} Months</p>
+                            <p><span>since: </span>{days(new Date('12/12/2021'), date_2)} Months</p>
                         </li>
                         <li>
                             <p>Python</p>
-                            <p><span>since:</span>{days(new Date('01/6/2022'), date_2)} Months</p>
+                            <p><span>since: </span>{days(new Date('01/6/2022'), date_2)} Months</p>
                         </li>
                         <li>
                             <p>Linux</p>
-                            <p><span>since:</span>{days(new Date('04/23/2019'), date_2)} Months</p>
+                            <p><span>since: </span>{days(new Date('04/23/2019'), date_2)} Months</p>
                         </li>
                         <li>
                             <p>SQL</p>
-                            <p><span>since:</span>{days(new Date('08/8/2021'), date_2)} Months</p>
+                            <p><span>since: </span>{days(new Date('08/8/2021'), date_2)} Months</p>
                         </li>
                     </ul>
                 </Box>
