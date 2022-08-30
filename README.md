@@ -6,6 +6,10 @@
 
 # Installing node_modules
 
+### Project use node on v16.14.2
+
+<br>
+
 To install node modules:
 ```
     $ sudo yarn install
