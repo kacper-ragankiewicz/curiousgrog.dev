@@ -83,6 +83,14 @@ const Home = ({ className }) => {
                     desc="Comercial website for enterteiment company"
                     url="http://amazingkidsacademy.pl"
                 ></Spans>
+                <Spans
+                    title="3DFXanimation"
+                    object={["HTML + CSS", "Vanilla JS","Three.js"]}
+                    className={styles.spans}
+                    liStyle={styles.list}
+                    desc="Website based on 3D animation"
+                    url="https://curiousgrog-vite.vercel.app"
+                ></Spans>
             </div>
             <div className={styles.conteiner}>
                 <Span
