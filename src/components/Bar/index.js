@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames";
 import styles from "./Bar.module.sass";
 
-import Waves from "../Waves";
 
 const Bar = ({ className, object }) => {
   const [lightone, setLightone] = React.useState(true);

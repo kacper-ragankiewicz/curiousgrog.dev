@@ -37,7 +37,7 @@ const Spans = ({
             {url || img ?
             <div className={styles.wrap}>
                 {img &&
-                    <button className={styles.button} onClick={()=> setVisible(!visible)}><a>Show me</a></button>}
+                    <button className={styles.button} onClick={()=> setVisible(!visible)}><span>Show me</span></button>}
                         <div className={cn(styles.comp, { [styles.visible]: visible })}>
                             <span className={styles.close} onClick={()=> setVisible(!visible)}>x</span>
                             <img className={styles.image} src={img} alt=""/>

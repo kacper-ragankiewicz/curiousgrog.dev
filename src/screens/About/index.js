@@ -108,7 +108,7 @@ const About = ({ className }) => {
                     </ul>
                     <div className={cn(styles.comp, { [styles.visible]: visible })}>
                         <span className={styles.close} onClick={()=> setVisible(!visible)}>x</span>
-                        <img src={require("../../assets/img/THM-QYGR1JFFXQ.png")}/>
+                        <img src={require("../../assets/img/THM-QYGR1JFFXQ.png")} alt="Cert"/>
                     </div>
                 </Box>
                 <Spans
