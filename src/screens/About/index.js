@@ -6,6 +6,9 @@ import cn from "classnames";
 import Box from "../../components/Box";
 import Shower from "../../components/Shower";
 import Spans from "../../components/Spans";
+import helmet_grogu from "../../assets/img/helmet_grogu.jpg";
+
+import cert from "../../assets/img/THM-QYGR1JFFXQ.png";
 
 // scripts
 import { Date as days } from "../../scripts/Date";
@@ -21,7 +24,7 @@ const About = ({ className }) => {
         <div className={styles.body}>
             <div className={styles.header}>
                 <div className={styles.image}>
-                    <img src={require("../../assets/img/helmet_grogu.jpg")} alt='grogu'/>
+                    <img src={helmet_grogu} alt='grogu'/>
                 </div>
                 <div className={styles.name}>
                     <span>Kacper</span>
@@ -108,7 +111,7 @@ const About = ({ className }) => {
                     </ul>
                     <div className={cn(styles.comp, { [styles.visible]: visible })}>
                         <span className={styles.close} onClick={()=> setVisible(!visible)}>x</span>
-                        <img src={require("../../assets/img/THM-QYGR1JFFXQ.png")} alt="Cert"/>
+                        <img src={cert} alt="Cert"/>
                     </div>
                 </Box>
                 <Spans

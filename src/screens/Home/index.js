@@ -8,6 +8,9 @@ import Span from "../../components/Span";
 import Bar from "../../components/Bar";
 import Spans from "../../components/Spans";
 
+import starcntr from "../../assets/img/StarCNTR.png";
+import cinema from "../../assets/img/Django.png";
+
 const content = {
     paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and always trying to improve my skills.",
 };
@@ -47,7 +50,7 @@ const Home = ({ className }) => {
                     object={["React", "NodeJS", "Sass", "SQL", "Figma", "API"]}
                     className={styles.spans}
                     desc="Web APP with logging and API"
-                    img={require("../../assets/img/StarCNTR.png")}
+                    img={starcntr}
                     url="https://devscntr.com/"
                 ></Spans>
                 <Spans
@@ -72,7 +75,7 @@ const Home = ({ className }) => {
                     className={styles.spans}
                     liStyle={styles.list}
                     desc="Online cinema website"
-                    img={require("../../assets/img/Django.png")}
+                    img={cinema}
                 ></Spans>
                 <Spans
                     title="Amazingkidsacademy"
