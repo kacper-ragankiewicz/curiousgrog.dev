@@ -44,7 +44,7 @@ const Home = ({ className }) => {
                 />
             </div>
             <div className={cn(styles.holder, { [styles.active]: visible})}>
-            <div className={styles.title}>My projects:</div>
+            <div className={styles.title}>My projects<span>:</span></div>
                 <Spans
                     title="DevsCNTR"
                     object={["React", "NodeJS", "Sass", "SQL", "Figma", "API"]}
@@ -52,15 +52,15 @@ const Home = ({ className }) => {
                     desc="Web APP with logging and API"
                     img={starcntr}
                     url="https://devscntr.com/"
-                ></Spans>
+                />
                 <Spans
-                    title="Photezer"
-                    object={["Frontend", "HTML + CSS", "JavaScript"]}
+                    title="Amazingkidsacademy"
+                    object={["HTML + CSS", "Bootstrap","Server"]}
                     className={styles.spans}
-                    desc="Simple website for photography"
-                    url="https://photezer.vercel.app"
-                    github="https://github.com/kacper-ragankiewicz/Photezer"
-                ></Spans>
+                    liStyle={styles.list}
+                    desc="Comercial website for enterteiment company"
+                    url="http://amazingkidsacademy.pl"
+                />
                 <Spans
                     title="curiousgrog.dev"
                     object={["React", "Sass", "Animations", "Webpack"]}
@@ -70,7 +70,7 @@ const Home = ({ className }) => {
                     url="/"
                     buttonSpan="You are here!"
                     github="https://github.com/kacper-ragankiewicz/curiousgrog.dev"
-                ></Spans>
+                />
                 <Spans
                     title="Cinema"
                     object={["Django", "PostgreSQL", "HTML + CSS","Bootstrap"]}
@@ -79,15 +79,15 @@ const Home = ({ className }) => {
                     desc="Online cinema website"
                     img={cinema}
                     github="https://github.com/kacper-ragankiewicz/Cinema_django"
-                ></Spans>
+                />
                 <Spans
-                    title="Amazingkidsacademy"
-                    object={["HTML + CSS", "Bootstrap","Server"]}
+                    title="Photezer"
+                    object={["Frontend", "HTML + CSS", "JavaScript"]}
                     className={styles.spans}
-                    liStyle={styles.list}
-                    desc="Comercial website for enterteiment company"
-                    url="http://amazingkidsacademy.pl"
-                ></Spans>
+                    desc="Simple website for photography"
+                    url="https://photezer.vercel.app"
+                    github="https://github.com/kacper-ragankiewicz/Photezer"
+                />
                 <Spans
                     title="3DFXanimation"
                     object={["HTML + CSS", "Vanilla JS","Three.js", "Vite"]}
@@ -96,7 +96,7 @@ const Home = ({ className }) => {
                     desc="Website based on 3D animation"
                     url="https://curiousgrog-vite.vercel.app"
                     github="https://github.com/kacper-ragankiewicz/3DFXanimation"
-                ></Spans>
+                />
             </div>
             <div className={styles.conteiner}>
                 <Span
