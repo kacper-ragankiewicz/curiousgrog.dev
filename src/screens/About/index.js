@@ -119,8 +119,8 @@ const About = ({ className }) => {
                     object={["React", "Sass", "Animations"]}
                     className={styles.spans}
                     desc="This website"
-                    url="/"
-                    buttonSpan="You are here!"
+                    url="https://github.com/kacper-ragankiewicz/curiousgrog.dev"
+                    buttonSpan="See on Github!"
                 ></Spans>
              </div>
         </div>

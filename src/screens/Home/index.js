@@ -59,15 +59,17 @@ const Home = ({ className }) => {
                     className={styles.spans}
                     desc="Simple website for photography"
                     url="https://photezer.vercel.app"
+                    github="https://github.com/kacper-ragankiewicz/Photezer"
                 ></Spans>
                 <Spans
                     title="curiousgrog.dev"
-                    object={["React", "Sass", "Animations"]}
+                    object={["React", "Sass", "Animations", "Webpack"]}
                     className={styles.spans}
                     liStyle={styles.list}
                     desc="This website"
                     url="/"
                     buttonSpan="You are here!"
+                    github="https://github.com/kacper-ragankiewicz/curiousgrog.dev"
                 ></Spans>
                 <Spans
                     title="Cinema"
@@ -76,6 +78,7 @@ const Home = ({ className }) => {
                     liStyle={styles.list}
                     desc="Online cinema website"
                     img={cinema}
+                    github="https://github.com/kacper-ragankiewicz/Cinema_django"
                 ></Spans>
                 <Spans
                     title="Amazingkidsacademy"
@@ -87,11 +90,12 @@ const Home = ({ className }) => {
                 ></Spans>
                 <Spans
                     title="3DFXanimation"
-                    object={["HTML + CSS", "Vanilla JS","Three.js"]}
+                    object={["HTML + CSS", "Vanilla JS","Three.js", "Vite"]}
                     className={styles.spans}
                     liStyle={styles.list}
                     desc="Website based on 3D animation"
                     url="https://curiousgrog-vite.vercel.app"
+                    github="https://github.com/kacper-ragankiewicz/3DFXanimation"
                 ></Spans>
             </div>
             <div className={styles.conteiner}>

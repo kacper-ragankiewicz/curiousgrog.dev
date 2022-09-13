@@ -4,6 +4,8 @@ import cn from "classnames";
 
 import Box from "../Box";
 
+import githublogo from "../../assets/img/github-logo.png"
+
 const Spans = ({
     className,
     buttonSpan,
@@ -13,6 +15,7 @@ const Spans = ({
     desc,
     img,
     url,
+    github,
 }) => {
     const [visible, setVisible] = React.useState(false);
 
@@ -34,7 +37,7 @@ const Spans = ({
                 {object[8] && <li>{object[8]}</li>}
                 {object[9] && <li>{object[9]}</li>}
             </ul>
-            {url || img ?
+            {url || img || github ?
             <div className={styles.wrap}>
                 {img &&
                     <button className={styles.button} onClick={()=> setVisible(!visible)}><span>Show me</span></button>}
@@ -45,6 +48,9 @@ const Spans = ({
                 {url &&    <button className={styles.button}>
                     <a href={url}>{buttonSpan ? buttonSpan : "Check out"}</a>
                 </button> }
+                {github &&
+                    <span className={styles.github}><a href={github}><img src={githublogo} alt="Github"/></a></span>
+                }
             </div> : null}
         </Box>
     );
