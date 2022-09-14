@@ -1,0 +1,26 @@
+@import ../../assets/main
+
+.tech
+    display: flex
+    gap: 1rem
+    list-style: none
+    justify-content: center
+    flex-wrap: wrap
+    color: $m3
+    padding: 1rem 0
+    li
+        flex: 1 1 110px
+        text-align: center
+        padding: 2px .5rem
+        border-radius: 2rem
+        background-color: $m4
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+        transition: 0.4s linear
+        span
+            font-weight: 300
+            color: $m5
+        p
+            font-weight: 450
+        &:hover
+            cursor: pointer
+            animation: move .4s ease-in-out infinite

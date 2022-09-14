@@ -11,6 +11,7 @@ import Home from "./screens/Home";
 import About from "./screens/About";
 import Contact from "./screens/Contact";
 import Jumy from "./screens/Jumy";
+import Test from "./screens/Test";
 
 function App() {
   return (
@@ -52,6 +53,15 @@ function App() {
             </Page>
           )}
         />
+        {/* <Route
+          exact
+          path={Routes.TEST}
+          render={() => (
+            <Page>
+              <Test />
+            </Page>
+          )}
+        /> */}
       </Switch>
     </Router>
   );

@@ -26,16 +26,10 @@ const Spans = ({
         >
             {desc && <div className={styles.desc}>{desc}</div>}
             <ul className={cn(styles.body, liStyle)}>
-                {object[0] && <li>{object[0]}</li>}
-                {object[1] && <li>{object[1]}</li>}
-                {object[2] && <li>{object[2]}</li>}
-                {object[3] && <li>{object[3]}</li>}
-                {object[4] && <li>{object[4]}</li>}
-                {object[5] && <li>{object[5]}</li>}
-                {object[6] && <li>{object[6]}</li>}
-                {object[7] && <li>{object[7]}</li>}
-                {object[8] && <li>{object[8]}</li>}
-                {object[9] && <li>{object[9]}</li>}
+            { object.map((item,index) => (
+                    <li key={index}>{item}</li>
+                ))
+            }
             </ul>
             {url || img || github ?
             <div className={styles.wrap}>
