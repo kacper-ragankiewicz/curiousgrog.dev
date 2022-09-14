@@ -24,7 +24,7 @@ const Spans = ({
             title={title}
             className={className}
         >
-            {desc && <div className={styles.desc}>{desc}</div>}
+            {desc && <p className={styles.desc}>{desc}</p>}
             <ul className={cn(styles.body, liStyle)}>
             { object.map((item,index) => (
                     <li key={index}>{item}</li>

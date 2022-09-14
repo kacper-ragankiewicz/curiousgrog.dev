@@ -6,9 +6,9 @@ import Logo from "../Header/Logo"
 const Footer = ({ className }) => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.body}>
+            <header className={styles.body}>
                 <Logo className={styles.logo}/>
-            </div>
+            </header>
         </footer>
     );
 }

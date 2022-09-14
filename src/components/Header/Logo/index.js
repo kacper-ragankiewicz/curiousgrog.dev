@@ -5,9 +5,9 @@ import styles from "./Logo.module.sass";
 const Logo = ({ className }) => {
 
     return (
-        <div className={cn(styles.logo, className)}>
+        <header className={cn(styles.logo, className)}>
             <a href="/"><span>curiousgrog<span className={styles.dev}>.dev</span></span></a>
-        </div>
+        </header>
     );
 };
 export default Logo;

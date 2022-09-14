@@ -31,9 +31,9 @@ class About extends Component {
                             <img src={helmet_grogu} alt='grogu'/>
                         </div>
                         <div className={styles.name}>
-                            <span>Kacper</span>
-                            <div className={styles.deve}>Fullstack Developer</div>
-                            <div className={styles.since}><span>since:</span>{days(new Date('8/25/2021'), new Date())} Months</div>
+                            <header>Kacper</header>
+                            <header className={styles.deve}>Fullstack Developer</header>
+                            <p className={styles.since}><span>since:</span>{days(new Date('8/25/2021'), new Date())} Months</p>
                         </div>
                     </div>
                     <div className={styles.holder}>
@@ -71,7 +71,8 @@ class About extends Component {
                                 "Python",
                                 "OWASP10",
                                 "Linux",
-                                "C++"
+                                "C++",
+                                "Webpack"
                             ]}
                         />
                         <DateBox

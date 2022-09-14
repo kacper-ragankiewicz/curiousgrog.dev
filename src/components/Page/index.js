@@ -35,14 +35,14 @@ const Page = ({ wide, children, title, className }) => {
         </div> */}
       <div className={styles.page}>
         <Header className={styles.header} />
-        <div
+        <main
           className={cn(styles.container, {
             [styles.wide]: wide,
           })}
         >
           {title && <div className={cn("h3", styles.title)}>{title}</div>}
           {children}
-        </div>
+        </main>
       </div>
     <Footer />
     </>

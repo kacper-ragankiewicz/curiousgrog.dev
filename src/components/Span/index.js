@@ -18,21 +18,19 @@ const Span = ({
     }, 2000);
 
     return (
-        <>
-            <div className={cn(styles.body, className)}>
-                <span className={styles.span}>{title}<span className={styles.linearwipe}>{wipe}</span></span>
-                <p className={styles.paragraf}>
-                    {paragraf}
-                </p>
-                <button
-                    className={cn(styles.button, { [styles.move]:move })}
-                    >
-                    <a href={link} className={styles.link}>
-                        {button}
-                    </a>
-                </button>
-            </div>
-        </>
+        <section className={cn(styles.body, className)}>
+            <header className={styles.span}>{title}<span className={styles.linearwipe}>{wipe}</span></header>
+            <p className={styles.paragraf}>
+                {paragraf}
+            </p>
+            <button
+                className={cn(styles.button, { [styles.move]:move })}
+                >
+                <a href={link} className={styles.link}>
+                    {button}
+                </a>
+            </button>
+        </section>
     );
 }
 export default Span;

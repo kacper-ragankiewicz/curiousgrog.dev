@@ -12,17 +12,17 @@ const Box = ({
 }) => {
     return (
         <>
-        <div className={cn(styles.box, className)}>
+        <section className={cn(styles.box, className)}>
             {title && (
                 <div>
                     <div className={cn(styles.head, classCardHead)}>
-                        <div className={cn(classTitle, styles.title)}>{title}</div>
+                        <header className={cn(classTitle, styles.title)}>{title}</header>
                         {head && head}
                     </div>
                 </div>
             )}
             {children}
-        </div>
+        </section>
         </>
     );
 };
