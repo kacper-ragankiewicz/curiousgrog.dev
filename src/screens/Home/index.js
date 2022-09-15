@@ -1,13 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import cn from "classnames";
 import styles from "./Home.module.sass";
+
+// main
+import MainComponent from "../../proto/MainComponent";
 
 // components
 import Slidebox from "../../components/Slidebox";
 import Span from "../../components/Span";
 import Bar from "../../components/Bar";
 import Spans from "../../components/Spans";
-
+// import api from "../../api";
 import starcntr from "../../assets/img/StarCNTR.png";
 import cinema from "../../assets/img/Django.png";
 
@@ -15,22 +18,28 @@ const content = {
     paragraf: "This is my website, here you can learn some useful informations about me. I am always trying to learn new things and always trying to improve my skills.",
 };
 
-class Home extends Component {
-    constructor(){
-        super()
-            this.state = {
-                visible: false
-            }
+class Home extends MainComponent {
+    constructor(props){
+        super(props)
+        // this.loadData = () => {
+        //     api
+        //     .get("/articles/list")
+        //     .then((res) => {
+        //         this.setState({ data: res.data }); // Object(this.state.data)[0].tablename
+        //     })
+        //     .catch((err) => {
+        //         this.setState({ data: [] });
+        //     })
+        // }
+        this.eventListener = () => {
+            window.addEventListener('scroll', () => {
+                const scrollvalue = document.documentElement.scrollTop;
+
+                if(scrollvalue>100) return this.setState({visible: true})
+            });
+        }
+
     }
-
-    componentDidMount() {
-        window.addEventListener('scroll', () => {
-            const scrollvalue = document.documentElement.scrollTop;
-
-            if(scrollvalue>100) this.setState({visible: true})
-        })
-    }
-
 
     render() {
         return (
@@ -51,7 +60,7 @@ class Home extends Component {
                     />
                 </div>
                 <div className={cn(styles.holder, { [styles.active]: this.state.visible})}>
-                <div className={styles.title}>My projects<span>:</span></div>
+                <header className={styles.title}>My projects<span>:</span></header>
                     <Spans
                         title="DevsCNTR"
                         object={["React", "NodeJS", "Sass", "SQL", "Figma", "API"]}

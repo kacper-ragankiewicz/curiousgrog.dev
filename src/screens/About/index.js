@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styles from "./About.module.sass";
 import cn from "classnames";
 
+//main
+import MainComponent from "../../proto/MainComponent";
+
 // components
 import Box from "../../components/Box";
 import Shower from "../../components/Shower";
@@ -15,7 +18,7 @@ import cert from "../../assets/img/THM-QYGR1JFFXQ.png";
 import { Date as days } from "../../scripts/Date";
 
 
-class About extends Component {
+class About extends MainComponent {
     constructor(props){
         super(props)
         this.state = {

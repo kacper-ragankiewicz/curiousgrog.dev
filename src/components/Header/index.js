@@ -8,44 +8,49 @@ import Logo from "./Logo";
 
 import list from "../../assets/img/list.png";
 
+class Header extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            visible: false
+        }
+    }
 
-const Header = ({ className }) => {
-    const [visible,setVisible] = React.useState(false)
-    return (
-            <nav className={styles.navbar}>
+    render() {
+        return(
+            <nav>
                 <div className={styles.body}>
                     <Logo/>
                     <div className={styles.controler}>
-                        <ul className={styles.navitem}>
-                            <Item/>
-                        </ul>
-                        {/* Toogling menu */}
-                         <div
-                            className={cn(styles.object, className, {
-                            [styles.active]: visible,
-                            })}
+                            <ul className={styles.navitem}>
+                                <Item/>
+                            </ul>
+
+                            {/* Toogling menu */}
+                        <div className={cn(styles.object, {
+                        [styles.active]: this.state.visible})}
+                        >
+                            <button className={cn(styles.list)}
+                            onClick={() => this.setState({visible: !this.state.visible})}
                             >
-                            <button
-                                className={cn(styles.list)}
-                                onClick={() => setVisible(!visible)}
-                                >
-                                    <img src={list} alt="Lista"/>
+                                <img src={list} alt="Lista"/>
                             </button>
                             <div className={styles.menu}>
-                            <div className={styles.header}>
-                                <span>menu</span>
-                            </div>
-                            <div className={styles.box}>
-                                    <ul className={styles.navitem}>
-                                        <Item />
-                                    </ul>
+                                <div className={styles.header}>
+                                    <span>menu</span>
+                                </div>
+                                <div className={styles.box}>
+                                        <ul className={styles.navitem}>
+                                            <Item />
+                                        </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
-    );
-};
+        )
+    }
+}
 
 export default withRouter(Header);
