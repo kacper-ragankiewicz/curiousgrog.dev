@@ -87,7 +87,7 @@ class About extends MainComponent {
                             title="Cybersecurity Cert's:"
                         >
                             <div className={styles.badge}>
-                                <img src="https://tryhackme-badges.s3.amazonaws.com/Roko.png" alt="TryHackMe"></img>
+                                <a href="https://tryhackme.com/p/Roko"><img src="https://tryhackme-badges.s3.amazonaws.com/Roko.png" alt="TryHackMe"/></a>
                             </div>
                             <ul className={styles.cert}>
                                 <li onClick = {() => this.setState({visible: !this.state.visible})}>COMPLETE BEGINNER</li>
