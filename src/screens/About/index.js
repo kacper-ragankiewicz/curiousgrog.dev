@@ -46,7 +46,7 @@ class About extends MainComponent {
                             object={[
                                 "JavaScript",
                                 "TypeScript",
-                                "React",
+                                "React/Next",
                                 "CSS/Sass",
                                 "NodeJS",
                                 "SQL",
