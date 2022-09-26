@@ -99,7 +99,7 @@ class About extends MainComponent {
                         </Box>
                         <Spans
                             title="curiousgrog.dev"
-                            object={["React", "Sass", "Animations"]}
+                            object={["React", "Sass", "SVG Animations", "Production Server", "HTML5", "custom Webpack", "Git repository"]}
                             className={styles.spans}
                             desc="This website"
                             url="https://github.com/kacper-ragankiewicz/curiousgrog.dev"
