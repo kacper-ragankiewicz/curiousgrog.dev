@@ -84,7 +84,7 @@ class About extends MainComponent {
                             date={['04/23/2020', '02/23/2021', '12/12/2021', '01/6/2022', '04/23/2019', '08/8/2021']}
                         />
                         <Box
-                            title="Cybersecurity Cert's:"
+                            title="Tryhackme Cert's:"
                         >
                             <div className={styles.badge}>
                                 <a href="https://tryhackme.com/p/Roko"><img src="https://tryhackme-badges.s3.amazonaws.com/Roko.png" alt="TryHackMe"/></a>
