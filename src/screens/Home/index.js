@@ -70,6 +70,13 @@ class Home extends MainComponent {
                         url="https://devscntr.com/"
                     />
                     <Spans
+                        title="AlgoCode"
+                        object={["React", "DOM manipulation", "CSS"]}
+                        className={styles.spans}
+                        desc="Find the shortest path"
+                        url="https://algocode.vercel.app/"
+                    />
+                    <Spans
                         title="Amazingkidsacademy"
                         object={["HTML + CSS", "Bootstrap","Server"]}
                         className={styles.spans}
