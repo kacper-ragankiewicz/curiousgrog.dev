@@ -71,7 +71,7 @@ class Home extends MainComponent {
                     />
                     <Spans
                         title="AlgoCode"
-                        object={["React", "DOM manipulation", "CSS"]}
+                        object={["React", "DOM", "CSS"]}
                         className={styles.spans}
                         desc="Find the shortest path"
                         url="https://algocode.vercel.app/"
