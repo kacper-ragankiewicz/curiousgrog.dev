@@ -47,7 +47,7 @@ class Home extends MainComponent {
                 <div className={styles.hidder}>
                     <div className={styles.body}>
                         <Span
-                            title="Fullstack"
+                            title="Software"
                             wipe=" developer"
                             paragraf={content.paragraf}
                             button="Contact me"
