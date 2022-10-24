@@ -18,6 +18,7 @@ const Spans = ({
     github,
 }) => {
     const [visible, setVisible] = React.useState(false);
+    const [cat, setCat] = React.useState(false)
 
     return(
         <Box
@@ -43,7 +44,7 @@ const Spans = ({
                     <a href={url}>{buttonSpan ? buttonSpan : "Check out"}</a>
                 </button> }
                 {github &&
-                    <span className={styles.github}><a href={github}><img src={githublogo} alt="Github"/></a></span>
+                    <span onClick={() => setCat(!cat)} className={cn(styles.github, { [styles.active]: cat})}><a href={github}><img src={githublogo} alt="Github"/></a></span>
                 }
             </div> : null}
         </Box>
