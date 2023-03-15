@@ -62,6 +62,13 @@ class Home extends MainComponent {
                 <div className={cn(styles.holder, { [styles.active]: this.state.visible})}>
                 <header className={styles.title}>My projects<span>:</span></header>
                     <Spans
+                        title="ChipTree"
+                        object={["NextJS", "Sass", "NodeJS", "Firebase", "PostgreSQL"]}
+                        className={styles.spans}
+                        desc="My owne project, IoT devices"
+                        url="https://chiptree.pl"
+                    />
+                    <Spans
                         title="itCNTR"
                         object={["React", "Sass", "Figma"]}
                         className={styles.spans}
