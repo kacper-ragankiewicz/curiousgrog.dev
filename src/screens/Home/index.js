@@ -62,10 +62,10 @@ class Home extends MainComponent {
                 <div className={cn(styles.holder, { [styles.active]: this.state.visible})}>
                 <header className={styles.title}>My projects<span>:</span></header>
                     <Spans
-                        title="DevsCNTR"
-                        object={["React", "NodeJS", "Sass", "SQL", "Figma", "API"]}
+                        title="itCNTR"
+                        object={["React", "Sass", "Figma"]}
                         className={styles.spans}
-                        desc="Web APP with logging and API"
+                        desc="Web Search for IT offerts"
                         img={starcntr}
                         url="https://devscntr.com/"
                     />
@@ -99,7 +99,7 @@ class Home extends MainComponent {
                         object={["Django", "PostgreSQL", "HTML + CSS","Bootstrap"]}
                         className={styles.spans}
                         liStyle={styles.list}
-                        desc="Online cinema website"
+                        desc="Online cinema website, one of my first projects"
                         img={cinema}
                         github="https://github.com/kacper-ragankiewicz/Cinema_django"
                     />
@@ -107,7 +107,7 @@ class Home extends MainComponent {
                         title="Photezer"
                         object={["Frontend", "HTML + CSS", "JavaScript"]}
                         className={styles.spans}
-                        desc="Simple website for photography"
+                        desc="My First HTML and CSS project"
                         url="https://photezer.vercel.app"
                         github="https://github.com/kacper-ragankiewicz/Photezer"
                     />
