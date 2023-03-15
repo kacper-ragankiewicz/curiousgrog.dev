@@ -10,7 +10,7 @@ import Box from "../../components/Box";
 import Shower from "../../components/Shower";
 import Spans from "../../components/Spans";
 import DateBox from "../../components/DateBox";
-import helmet_grogu from "../../assets/img/helmet_grogu.jpg";
+import helmet_grogu from "../../assets/img/1.jpg";
 
 import cert from "../../assets/img/THM-QYGR1JFFXQ.png";
 
@@ -35,7 +35,7 @@ class About extends MainComponent {
                         </div>
                         <div className={styles.name}>
                             <header>Kacper</header>
-                            <header className={styles.deve}>Fullstack Developer</header>
+                            <header className={styles.deve}>Fullstack Developer -> DevOps</header>
                             <p className={styles.since}><span>since:</span>{days(new Date('8/25/2021'), new Date())} Months</p>
                         </div>
                     </div>

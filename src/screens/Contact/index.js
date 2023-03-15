@@ -10,7 +10,7 @@ const Contact = () => {
             <Spans
                 title="Contact"
                 desc="The ways to contact me"
-                object={['kacper-ragankiewicz@wp.pl', 'github: kacper-ragankiewicz']}
+                object={['kasper.ragan@gmail.com', 'github: kacper-ragankiewicz']}
                 className={styles.spans}
             ></Spans>
             <Bar
