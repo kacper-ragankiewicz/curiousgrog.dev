@@ -65,7 +65,7 @@ class Home extends MainComponent {
                         title="ChipTree"
                         object={["NextJS", "Sass", "NodeJS", "Firebase", "PostgreSQL"]}
                         className={styles.spans}
-                        desc="My owne project, IoT devices"
+                        desc="My own project, IoT devices"
                         url="https://chiptree.pl"
                     />
                     <Spans
