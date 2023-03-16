@@ -6,7 +6,7 @@ const Logo = ({ className }) => {
 
     return (
         <header className={cn(styles.logo, className)}>
-            <a href="/"><span>curiousgrog<span className={styles.dev}>.dev</span></span></a>
+            <a href="/"><span>kacperragan<span className={styles.dev}>.dev</span></span></a>
         </header>
     );
 };

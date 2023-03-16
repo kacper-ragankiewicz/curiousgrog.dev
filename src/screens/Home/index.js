@@ -92,7 +92,7 @@ class Home extends MainComponent {
                         url="http://amazingkidsacademy.pl"
                     />
                     <Spans
-                        title="curiousgrog.dev"
+                        title="kacper ragan dev"
                         object={["React", "Sass", "Animations", "Webpack"]}
                         className={styles.spans}
                         liStyle={styles.list}

@@ -18,6 +18,38 @@
         font-weight: 400
         animation: move 4s ease-in-out infinite
 
+.mapWrapper
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.bodyMap
+    display: flex
+    gap: 2px
+    list-style: none
+    justify-content: center
+    flex-wrap: wrap
+    padding: 1rem 0
+    li
+        flex: 1 1 110px
+        text-align: center
+        padding: .6rem
+        margin: 10px
+        border-radius: 1rem
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+        transition: 0.4s linear
+        font-weight: 400
+        // animation: move 4s ease-in-out infinite
+
+.mapContainer
+    margin-top: -30px
+    background: $m6
+    border: 1px solid $p6
+    width: 95%
+    border-radius: 15px
+
 .desc
     font-weight: 300
     padding: 0px
@@ -147,3 +179,25 @@
         transform: translate(0,4px)
     100%
         transform: translate(0,0)
+
+.map
+    left: 0
+    background: $m4
+    padding: 10px
+    width: 96%
+    display: flex
+    border-radius: 2rem
+    justify-content: center
+    position: relative
+    border: 1px solid $m6
+    // &:after
+    //     content: " "
+    //     width: 102%
+    //     height: 110%
+    //     // background: $p2
+    //     position: absolute
+    //     z-index: -1
+    //     border-radius: 2rem
+    //     top: -5%
+    //     left: -1%
+

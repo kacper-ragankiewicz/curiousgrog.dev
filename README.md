@@ -1,5 +1,5 @@
 # You can see it on:
-### https://curiousgrog.vercel.app/
+### https://dev.chiptree.pl/
 
 <br>
 <br>

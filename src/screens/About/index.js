@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { Component } from "react";
 import styles from "./About.module.sass";
 import cn from "classnames";
@@ -35,20 +36,26 @@ class About extends MainComponent {
                         </div>
                         <div className={styles.name}>
                             <header>Kacper</header>
-                            <header className={styles.deve}>Fullstack Developer -> DevOps</header>
+                            <header className={styles.deve}>Fullstack Developer</header>
                             <p className={styles.since}><span>since:</span>{days(new Date('8/25/2021'), new Date())} Months</p>
                         </div>
                     </div>
                     <div className={styles.holder}>
                         <Spans
-                            title="Skills"
+                            title="Focusing in 2023"
+                            className={styles.skills}
+                            map="DevOps"
+                            mapObject={['+ Azure', '+ Docker', '+ Jenkins', '+ Kubernetes']}
+                        />
+                        <Spans
+                            title="Obtained skills"
                             className={styles.skills}
                             object={[
                                 "JavaScript",
-                                "TypeScript",
-                                "React/Next",
-                                "CSS/Sass",
-                                "NodeJS",
+                                "Python",
+                                "C++/C#",
+                                "CSS + HTML",
+                                "Rust",
                                 "SQL",
                                 "Information Technology",
                             ]}
@@ -75,13 +82,13 @@ class About extends MainComponent {
                                 "OWASP10",
                                 "Linux",
                                 "C++",
-                                "Webpack"
+                                "Rust"
                             ]}
                         />
                         <DateBox
-                            title="Using technology since:"
-                            item={['HTML+CSS', 'JavaScript', 'React', 'Python', 'Linux', 'SQL']}
-                            date={['04/23/2020', '02/23/2021', '12/12/2021', '01/6/2022', '04/23/2019', '08/8/2021']}
+                            title="Start using technology:"
+                            item={['HTML+CSS', 'JavaScript', 'C++', 'Python', 'Linux', 'Rust']}
+                            date={['04/23/2020', '02/23/2021', '12/12/2021', '01/6/2022', '04/23/2019', '01/02/2023']}
                         />
                         <Box
                             title="Tryhackme Cert's:"
@@ -97,14 +104,14 @@ class About extends MainComponent {
                                 <img src={cert} alt="Cert"/>
                             </div>
                         </Box>
-                        <Spans
+                        {/* <Spans
                             title="curiousgrog.dev"
                             object={["React", "Sass", "SVG Animations", "Production Server", "HTML5", "custom Webpack", "Git repository"]}
                             className={styles.spans}
                             desc="This website"
                             url="https://github.com/kacper-ragankiewicz/curiousgrog.dev"
                             buttonSpan="See on Github!"
-                        ></Spans>
+                        ></Spans> */}
                      </div>
                 </div>
         )

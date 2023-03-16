@@ -16,9 +16,15 @@ const Spans = ({
     img,
     url,
     github,
+    map,
+    mapObject
 }) => {
     const [visible, setVisible] = React.useState(false);
     const [cat, setCat] = React.useState(false)
+
+    const mapList = mapObject?.map((item, index) =>
+        <li key={index}>{item}</li>
+    )
 
     return(
         <Box
@@ -26,12 +32,24 @@ const Spans = ({
             className={className}
         >
             {desc && <p className={styles.desc}>{desc}</p>}
-            <ul className={cn(styles.body, liStyle)}>
-            { object.map((item,index) => (
-                    <li key={index}>{item}</li>
-                ))
+            {object &&
+                <ul className={cn(styles.body, liStyle)}>
+                { object?.map((item,index) => (
+                        <li key={index}>{item}</li>
+                    ))
+                }
+                </ul>
             }
-            </ul>
+            { map &&
+                <div className={styles.mapWrapper}>
+                    <div className={styles.map}>{map}</div>
+                    <div className={styles.mapContainer}>
+                        <ul className={styles.bodyMap}>
+                            {mapList}
+                        </ul>
+                    </div>
+                </div>
+            }
             {url || img || github ?
             <div className={styles.wrap}>
                 {img &&
